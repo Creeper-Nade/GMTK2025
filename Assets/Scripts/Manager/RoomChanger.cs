@@ -61,7 +61,7 @@ public class RoomChanger : Singleton<RoomChanger>
     private IEnumerator ExitRoom(RoomBase TargetRoom, int AnimHash)
     {
         _ScreenSlideTransitAnimator.SetTrigger(AnimHash);
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.17f);
         
         _currentRoom.gameObject.SetActive(false);
         foreach (GameObject obj in _ButtonList)

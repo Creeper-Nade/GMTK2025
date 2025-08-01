@@ -19,9 +19,8 @@ public class RoomChanger : Singleton<RoomChanger>
     private int _SlideUpHash = Animator.StringToHash("SlideUp");
 
     private RoomBase _currentRoom;
-    protected override void Awake()
+    private void Start()
     {
-        base.Awake();
         //reset and init rooms
         _currentRoom = _DefaultRoom;
         foreach (RoomBase room in _RoomList)

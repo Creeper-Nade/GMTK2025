@@ -7,7 +7,7 @@ public abstract class AbstractInteractables : MonoBehaviour, IPointerEnterHandle
     private Renderer _material_renderer;
     private int _OutlineActivate = Shader.PropertyToID("_Outline");
     private int _OutlineThickness = Shader.PropertyToID("_OutlineThickness");
-    private void Awake()
+    protected virtual void Awake()
     {
         _material_renderer = GetComponent<Renderer>();
     }

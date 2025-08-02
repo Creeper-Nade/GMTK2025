@@ -92,17 +92,17 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
             }
         }
         if (_CursedObjects != null && PostProcessingControl.Instance.vignette.intensity.value > 0)
-{
-    // Filter out nulls and check for any cursed objects
-    bool anyCursed = _CursedObjects
-        .Where(obj => obj != null)  // Filter out null objects
-        .Any(obj => obj.is_cursed); // Check if any remaining object is cursed
+        {
+        // Filter out nulls and check for any cursed objects
+        bool anyCursed = _CursedObjects
+            .Where(obj => obj != null)  // Filter out null objects
+            .Any(obj => obj.is_cursed); // Check if any remaining object is cursed
 
-    if (!anyCursed && !_VignetteFadeOutCalled)
-    {
-        StartCoroutine(VignetteFadeOut());
-    }
-}
+        if (!anyCursed && !_VignetteFadeOutCalled)
+        {
+            StartCoroutine(VignetteFadeOut());
+        }
+        }
         
         if (!_CurseCalled)
             StartCoroutine(CallCurse());
@@ -131,6 +131,14 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
         {
             elapsed += Time.deltaTime;
              PostProcessingControl.Instance.vignette.intensity.value = Mathf.Lerp(0, 0.5f, elapsed / duration);
+             bool anyCursed = _CursedObjects
+            .Where(obj => obj != null)  // Filter out null objects
+            .Any(obj => obj.is_cursed); // Check if any remaining object is cursed
+
+            if (!anyCursed)
+            {
+                break;
+            }
             yield return null;
         }
     }

@@ -101,6 +101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b8048afe0e1a14799b8e5f2b89853b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CurseParticlePrefab: {fileID: 8961236503330503431, guid: 5955cc9e098cab245bfcf37d70fdc3f0, type: 3}
+  is_cursed: 0
+  curseState: 0
   _Growth_Time: 6
   spriteRenderer: {fileID: 0}
   _no_sprite: {fileID: 0}

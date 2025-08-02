@@ -23,8 +23,9 @@ public class MiscIngredients : AbstractInteractables, IHauntAction
     }
     private Haunt_Types _haunt_Type;
 
-    private void OnEnable() {
-        if (is_haunted && _haunt_Type==Haunt_Types.vibrate)
+    protected override void OnEnable() {
+        base.OnEnable();
+        if (is_haunted && _haunt_Type == Haunt_Types.vibrate)
         {
             StartCoroutine(Vibrate());
         }

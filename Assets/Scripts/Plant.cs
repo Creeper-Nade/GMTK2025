@@ -2,6 +2,23 @@ using System.Collections.Generic;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 
+<<<<<<< HEAD
+=======
+
+/// <summary>
+/// 药材颜色枚举，用于分类合成或显示
+/// </summary>
+    public enum HerbColor
+    {
+        Red,
+        Blue,
+        Green,
+        Yellow,
+        Purple,
+    }
+
+
+>>>>>>> DD
 public class Plant : AbstractInteractables, IHauntAction
 {
     #region Growth variables
@@ -12,8 +29,17 @@ public class Plant : AbstractInteractables, IHauntAction
     [SerializeField] private Sprite _sprout_sprite;
     [SerializeField] private Sprite _seedling_sprite;
     [SerializeField] private Sprite _plant_sprite;
+<<<<<<< HEAD
     public float Current_Time;
     
+=======
+
+    [SerializeField] private HerbColor herbColor;
+    public HerbColor HerbColor => herbColor;
+
+    public float Current_Time;
+
+>>>>>>> DD
     public enum Growth_Stages
     {
         none,

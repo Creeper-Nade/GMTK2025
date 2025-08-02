@@ -7,6 +7,9 @@ public abstract class AbstractInteractables : MonoBehaviour, IPointerEnterHandle
     private Renderer _material_renderer;
     private int _OutlineActivate = Shader.PropertyToID("_Outline");
     private int _OutlineThickness = Shader.PropertyToID("_OutlineThickness");
+    private int _DistortionActivate = Shader.PropertyToID("_Distortion");
+
+    private bool is_cursed = false;
     protected virtual void Awake()
     {
         _material_renderer = GetComponent<Renderer>();
@@ -14,6 +17,8 @@ public abstract class AbstractInteractables : MonoBehaviour, IPointerEnterHandle
     public virtual void Curse()
     {
         //implement logic inside for curse mechanic
+        is_cursed = true;
+        _material_renderer.material.SetInt(_DistortionActivate, 1);
         //spawn particle system
         //initiate timer
         //set the status of this gameobject to Cursed

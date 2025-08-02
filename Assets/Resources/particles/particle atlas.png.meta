@@ -1,0 +1,2691 @@
+fileFormatVersion: 2
+guid: 2f8844189949f9f4194ff4b83413825b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3904036585568096591
+    second: particle atlas_0
+  - first:
+      213: -8684442670497364885
+    second: particle atlas_1
+  - first:
+      213: 5482475941812669763
+    second: particle atlas_2
+  - first:
+      213: 5999741247511037063
+    second: particle atlas_3
+  - first:
+      213: -1316385021575205344
+    second: particle atlas_4
+  - first:
+      213: -4898052580430956290
+    second: particle atlas_5
+  - first:
+      213: 4691772342199264446
+    second: particle atlas_6
+  - first:
+      213: -5143305764519437240
+    second: particle atlas_7
+  - first:
+      213: 7937329264441652155
+    second: particle atlas_8
+  - first:
+      213: 4916167405589119318
+    second: particle atlas_9
+  - first:
+      213: 5882244451818177239
+    second: particle atlas_10
+  - first:
+      213: -2577865704996714408
+    second: particle atlas_11
+  - first:
+      213: -237233909018585508
+    second: particle atlas_12
+  - first:
+      213: 7592623476697671937
+    second: particle atlas_13
+  - first:
+      213: -6504438481348243080
+    second: particle atlas_14
+  - first:
+      213: 8228460045028172017
+    second: particle atlas_15
+  - first:
+      213: 4734592081180564769
+    second: particle atlas_16
+  - first:
+      213: -57518299065989126
+    second: particle atlas_17
+  - first:
+      213: -6500447246721422850
+    second: particle atlas_18
+  - first:
+      213: 5066701446625531059
+    second: particle atlas_19
+  - first:
+      213: 3164690946723171738
+    second: particle atlas_20
+  - first:
+      213: -2461287295863398426
+    second: particle atlas_21
+  - first:
+      213: 5551566307499931161
+    second: particle atlas_22
+  - first:
+      213: -7319931947921903003
+    second: particle atlas_23
+  - first:
+      213: 9213207772860445551
+    second: particle atlas_24
+  - first:
+      213: 417579942434887924
+    second: particle atlas_25
+  - first:
+      213: 798910875885775706
+    second: particle atlas_26
+  - first:
+      213: 1829742311558228307
+    second: particle atlas_27
+  - first:
+      213: 2891852212057229315
+    second: particle atlas_28
+  - first:
+      213: -3481720071845331848
+    second: particle atlas_29
+  - first:
+      213: 2311425059861919755
+    second: particle atlas_30
+  - first:
+      213: -1332968764541130777
+    second: particle atlas_31
+  - first:
+      213: -2126974392820706959
+    second: particle atlas_32
+  - first:
+      213: 7022810128752442859
+    second: particle atlas_33
+  - first:
+      213: 6881789708351717081
+    second: particle atlas_34
+  - first:
+      213: -6865943137149856080
+    second: particle atlas_35
+  - first:
+      213: -2716465130845417678
+    second: particle atlas_36
+  - first:
+      213: 2708456825371522097
+    second: particle atlas_37
+  - first:
+      213: 5094939124663877217
+    second: particle atlas_38
+  - first:
+      213: -5589604804340692452
+    second: particle atlas_39
+  - first:
+      213: -295102733555441386
+    second: particle atlas_40
+  - first:
+      213: -140399422324030926
+    second: particle atlas_41
+  - first:
+      213: 8372326551700832413
+    second: particle atlas_42
+  - first:
+      213: 5157210149431045929
+    second: particle atlas_43
+  - first:
+      213: -7242323506661752505
+    second: particle atlas_44
+  - first:
+      213: -2147491563392077470
+    second: particle atlas_45
+  - first:
+      213: -7527002102546076141
+    second: particle atlas_46
+  - first:
+      213: 4119925924227960777
+    second: particle atlas_47
+  - first:
+      213: 1929357744713642890
+    second: particle atlas_48
+  - first:
+      213: -5149792555890250482
+    second: particle atlas_49
+  - first:
+      213: -3623923323959181375
+    second: particle atlas_50
+  - first:
+      213: 4336397326523184829
+    second: particle atlas_51
+  - first:
+      213: -3961513207363390943
+    second: particle atlas_52
+  - first:
+      213: 8758578061404617237
+    second: particle atlas_53
+  - first:
+      213: 4166662980433121443
+    second: particle atlas_54
+  - first:
+      213: -7601574468788016533
+    second: particle atlas_55
+  - first:
+      213: 5524445737824323014
+    second: particle atlas_56
+  - first:
+      213: -6257007852801741927
+    second: particle atlas_57
+  - first:
+      213: 25302280396266851
+    second: particle atlas_58
+  - first:
+      213: 7920574199505159983
+    second: particle atlas_59
+  - first:
+      213: 6823854103771096829
+    second: particle atlas_60
+  - first:
+      213: -7467468105346936467
+    second: particle atlas_61
+  - first:
+      213: -5287145741032535294
+    second: particle atlas_62
+  - first:
+      213: 4243906010047290264
+    second: particle atlas_63
+  - first:
+      213: -6548447660178142364
+    second: particle atlas_64
+  - first:
+      213: -4763716748698217343
+    second: particle atlas_65
+  - first:
+      213: 2498623967097891605
+    second: particle atlas_66
+  - first:
+      213: 2681846812462332149
+    second: particle atlas_67
+  - first:
+      213: 4847459053249169051
+    second: particle atlas_68
+  - first:
+      213: 4573356005083668184
+    second: particle atlas_69
+  - first:
+      213: -1695523240867815561
+    second: particle atlas_70
+  - first:
+      213: 3885351374051937348
+    second: particle atlas_71
+  - first:
+      213: -3770978828584137294
+    second: particle atlas_72
+  - first:
+      213: -8450186680062776506
+    second: particle atlas_73
+  - first:
+      213: 6077528211835794439
+    second: particle atlas_74
+  - first:
+      213: 8969226226920166476
+    second: particle atlas_75
+  - first:
+      213: 4153765590336399037
+    second: particle atlas_76
+  - first:
+      213: 121990468779030843
+    second: particle atlas_77
+  - first:
+      213: -6961003546117355729
+    second: particle atlas_78
+  - first:
+      213: -3755060730927679057
+    second: particle atlas_79
+  - first:
+      213: -4303724006336154527
+    second: particle atlas_80
+  - first:
+      213: 186409472055665293
+    second: particle atlas_81
+  - first:
+      213: 6430592870744103468
+    second: particle atlas_82
+  - first:
+      213: 7324010119950292927
+    second: particle atlas_83
+  - first:
+      213: -2931665431735900971
+    second: particle atlas_84
+  - first:
+      213: -5387726143595086182
+    second: particle atlas_85
+  - first:
+      213: 4283043510030204753
+    second: particle atlas_86
+  - first:
+      213: -1007342081906171406
+    second: particle atlas_87
+  - first:
+      213: 229477614484125226
+    second: particle atlas_88
+  - first:
+      213: -9151315392648922340
+    second: particle atlas_89
+  - first:
+      213: 5160209487887589058
+    second: particle atlas_90
+  - first:
+      213: 3621559824654080182
+    second: particle atlas_91
+  - first:
+      213: 8156442311273757771
+    second: particle atlas_92
+  - first:
+      213: -4628542177955425246
+    second: particle atlas_93
+  - first:
+      213: 4336116640434367647
+    second: particle atlas_94
+  - first:
+      213: -5379955505806203135
+    second: particle atlas_95
+  - first:
+      213: -318268016240737226
+    second: particle atlas_96
+  - first:
+      213: 2799017564332380021
+    second: particle atlas_97
+  - first:
+      213: -2827978697915872685
+    second: particle atlas_98
+  - first:
+      213: -4171196830635308991
+    second: particle atlas_99
+  - first:
+      213: 7485215398578452709
+    second: particle atlas_100
+  - first:
+      213: -3884796881672387107
+    second: particle atlas_101
+  - first:
+      213: -1655988490488293148
+    second: particle atlas_102
+  - first:
+      213: -6106542660268435263
+    second: particle atlas_103
+  - first:
+      213: 6312469269886314011
+    second: particle atlas_104
+  - first:
+      213: 1051271578023781694
+    second: particle atlas_105
+  - first:
+      213: 4041975578106066659
+    second: particle atlas_106
+  - first:
+      213: -3093421297265217777
+    second: particle atlas_107
+  - first:
+      213: 7598200130754647834
+    second: particle atlas_108
+  - first:
+      213: 366285850500167486
+    second: particle atlas_109
+  - first:
+      213: -2957958852708565780
+    second: particle atlas_110
+  - first:
+      213: 7692508359132741679
+    second: particle atlas_111
+  - first:
+      213: -2272596658367164222
+    second: particle atlas_112
+  - first:
+      213: 3901387307398531101
+    second: particle atlas_113
+  - first:
+      213: -1786966588521615913
+    second: particle atlas_114
+  - first:
+      213: -303542345764147972
+    second: particle atlas_115
+  - first:
+      213: -5987412972474597892
+    second: particle atlas_116
+  - first:
+      213: 1213478611376082508
+    second: particle atlas_117
+  - first:
+      213: 33667940527786826
+    second: particle atlas_118
+  - first:
+      213: -7910725918602444807
+    second: particle atlas_119
+  - first:
+      213: 7585891652830578877
+    second: particle atlas_120
+  - first:
+      213: -4876372170754609215
+    second: particle atlas_121
+  - first:
+      213: 1997173710513167858
+    second: particle atlas_122
+  - first:
+      213: -2569586033407823416
+    second: particle atlas_123
+  - first:
+      213: 8839810533322704061
+    second: particle atlas_124
+  - first:
+      213: 5848581394942430567
+    second: particle atlas_125
+  - first:
+      213: 6703682662576651830
+    second: particle atlas_126
+  - first:
+      213: -3021947064020213331
+    second: particle atlas_127
+  - first:
+      213: 4291380895395448834
+    second: particle atlas_128
+  - first:
+      213: -5549485368707108357
+    second: particle atlas_129
+  - first:
+      213: -1286824656995984044
+    second: particle atlas_130
+  - first:
+      213: -6290979301352774727
+    second: particle atlas_131
+  - first:
+      213: -727011315381540299
+    second: particle atlas_132
+  - first:
+      213: 3780901016617680774
+    second: particle atlas_133
+  - first:
+      213: 2267464172760798803
+    second: particle atlas_134
+  - first:
+      213: -6248318652490807795
+    second: particle atlas_135
+  - first:
+      213: 4309951551506541115
+    second: particle atlas_136
+  - first:
+      213: -3779410525076573209
+    second: particle atlas_137
+  - first:
+      213: -5771815208148031107
+    second: particle atlas_138
+  - first:
+      213: 2895022663681912733
+    second: particle atlas_139
+  - first:
+      213: 466627156898491423
+    second: particle atlas_140
+  - first:
+      213: 3305367901686172978
+    second: particle atlas_141
+  - first:
+      213: 2924721393554308995
+    second: particle atlas_142
+  - first:
+      213: 2043025043979277297
+    second: particle atlas_143
+  - first:
+      213: 3402076082299047851
+    second: particle atlas_144
+  - first:
+      213: 45563770117266181
+    second: particle atlas_145
+  - first:
+      213: 900332838149159941
+    second: particle atlas_146
+  - first:
+      213: 745315792733735979
+    second: particle atlas_147
+  - first:
+      213: -6857866968016852906
+    second: particle atlas_148
+  - first:
+      213: -3371065943556020354
+    second: particle atlas_149
+  - first:
+      213: 5091842971808877651
+    second: particle atlas_150
+  - first:
+      213: 6631979401825550317
+    second: particle atlas_151
+  - first:
+      213: 5527347979983182591
+    second: particle atlas_152
+  - first:
+      213: 8978330335145614042
+    second: particle atlas_153
+  - first:
+      213: -450312436192981351
+    second: particle atlas_154
+  - first:
+      213: 4191117282595494089
+    second: particle atlas_155
+  - first:
+      213: 6732587388778344518
+    second: particle atlas_156
+  - first:
+      213: -8945445842148619555
+    second: particle atlas_157
+  - first:
+      213: -8326816495072186518
+    second: particle atlas_158
+  - first:
+      213: 8323404749536459408
+    second: particle atlas_159
+  - first:
+      213: 8364758619677617202
+    second: particle atlas_160
+  - first:
+      213: 8047234274501257092
+    second: particle atlas_161
+  - first:
+      213: -7071596814456609182
+    second: particle atlas_162
+  - first:
+      213: 1589565141520172444
+    second: particle atlas_163
+  - first:
+      213: 3677287634409440334
+    second: particle atlas_164
+  - first:
+      213: 7235010930864761807
+    second: particle atlas_165
+  - first:
+      213: 6907730423652542342
+    second: particle atlas_166
+  - first:
+      213: -1284412320838696579
+    second: particle atlas_167
+  - first:
+      213: 6195332870609536117
+    second: particle atlas_168
+  - first:
+      213: 533458917664601630
+    second: particle atlas_169
+  - first:
+      213: 863439530894888901
+    second: particle atlas_170
+  - first:
+      213: 8609154547242590351
+    second: particle atlas_171
+  - first:
+      213: 6209012840418290726
+    second: particle atlas_172
+  - first:
+      213: -8806127167007156001
+    second: particle atlas_173
+  - first:
+      213: 4144145485332247921
+    second: particle atlas_174
+  - first:
+      213: -1709572312281799748
+    second: particle atlas_175
+  - first:
+      213: 8185168066903856887
+    second: particle atlas_176
+  - first:
+      213: 2817791816637836689
+    second: particle atlas_177
+  - first:
+      213: -5459526586943296846
+    second: particle atlas_178
+  - first:
+      213: 1950441448013000105
+    second: particle atlas_179
+  - first:
+      213: 8747504573286501007
+    second: particle atlas_180
+  - first:
+      213: -558100701380910877
+    second: particle atlas_181
+  - first:
+      213: -1899575446660523957
+    second: particle atlas_182
+  - first:
+      213: -7203993911628639371
+    second: particle atlas_183
+  - first:
+      213: 32203807811282481
+    second: particle atlas_184
+  - first:
+      213: -4675763223053454775
+    second: particle atlas_185
+  - first:
+      213: -454769318338743996
+    second: particle atlas_186
+  - first:
+      213: -6347786121348041583
+    second: particle atlas_187
+  - first:
+      213: 8728266291212826697
+    second: particle atlas_188
+  - first:
+      213: -7738685880291011248
+    second: particle atlas_189
+  - first:
+      213: 7162375542519419030
+    second: particle atlas_190
+  - first:
+      213: 7759741564948723494
+    second: particle atlas_191
+  - first:
+      213: 9059682702693595861
+    second: particle atlas_192
+  - first:
+      213: -6352896008623919055
+    second: particle atlas_193
+  - first:
+      213: -8780655186019942958
+    second: particle atlas_194
+  - first:
+      213: -3723542568346739607
+    second: particle atlas_195
+  - first:
+      213: -1037911031896917823
+    second: particle atlas_196
+  - first:
+      213: 1763144807072373850
+    second: particle atlas_197
+  - first:
+      213: -4758919269688919958
+    second: particle atlas_198
+  - first:
+      213: 3616320061740798268
+    second: particle atlas_199
+  - first:
+      213: 8524480874818620339
+    second: particle atlas_200
+  - first:
+      213: -7449681085592711600
+    second: particle atlas_201
+  - first:
+      213: 2227062971637816731
+    second: particle atlas_202
+  - first:
+      213: -4786755898134871511
+    second: particle atlas_203
+  - first:
+      213: 3783213710707986850
+    second: particle atlas_204
+  - first:
+      213: 8903414003301460132
+    second: particle atlas_205
+  - first:
+      213: 5213797450548363929
+    second: particle atlas_206
+  - first:
+      213: -5726779792096170752
+    second: particle atlas_207
+  - first:
+      213: -643917660378532182
+    second: particle atlas_208
+  - first:
+      213: 9161014981680744352
+    second: particle atlas_209
+  - first:
+      213: -8460924781889652907
+    second: particle atlas_210
+  - first:
+      213: -4931909857805771580
+    second: particle atlas_211
+  - first:
+      213: 5303210872318827363
+    second: particle atlas_212
+  - first:
+      213: 6312537594910311786
+    second: particle atlas_213
+  - first:
+      213: -1798434347405463185
+    second: particle atlas_214
+  - first:
+      213: 7641532368731036711
+    second: particle atlas_215
+  - first:
+      213: 3246146141227020345
+    second: particle atlas_216
+  - first:
+      213: 7112859316381424633
+    second: particle atlas_217
+  - first:
+      213: 7787958900761635501
+    second: particle atlas_218
+  - first:
+      213: -3799234827398432830
+    second: particle atlas_219
+  - first:
+      213: -3829866067845683369
+    second: particle atlas_220
+  - first:
+      213: 7760261547894693151
+    second: particle atlas_221
+  - first:
+      213: -6272911512712885613
+    second: particle atlas_222
+  - first:
+      213: -114273860317255369
+    second: particle atlas_223
+  - first:
+      213: -3020419103279660743
+    second: particle atlas_224
+  - first:
+      213: 9131088284857731305
+    second: particle atlas_225
+  - first:
+      213: -6009606454107553943
+    second: particle atlas_226
+  - first:
+      213: -6524737087394503302
+    second: particle atlas_227
+  - first:
+      213: -6876318353233269011
+    second: particle atlas_228
+  - first:
+      213: 8811508561296423865
+    second: particle atlas_229
+  - first:
+      213: -515930017719228323
+    second: particle atlas_230
+  - first:
+      213: 7010311658281155647
+    second: particle atlas_231
+  - first:
+      213: -3225513966159951811
+    second: particle atlas_232
+  - first:
+      213: -9022607245758854831
+    second: particle atlas_233
+  - first:
+      213: -2652877892728064601
+    second: particle atlas_234
+  - first:
+      213: 7786116162908215937
+    second: particle atlas_235
+  - first:
+      213: -5386259767112693610
+    second: particle atlas_236
+  - first:
+      213: -5980747304848564230
+    second: particle atlas_237
+  - first:
+      213: 7660355377505823911
+    second: particle atlas_238
+  - first:
+      213: -4893705153035760010
+    second: particle atlas_239
+  - first:
+      213: -8689060012944293452
+    second: particle atlas_240
+  - first:
+      213: 4393953070430151319
+    second: particle atlas_241
+  - first:
+      213: 4314806648996370309
+    second: particle atlas_242
+  - first:
+      213: -6285307807241787786
+    second: particle atlas_243
+  - first:
+      213: -4131479680572014353
+    second: particle atlas_244
+  - first:
+      213: 8533591226189221223
+    second: particle atlas_245
+  - first:
+      213: 61362570274908632
+    second: particle atlas_246
+  - first:
+      213: -7831294465749081954
+    second: particle atlas_247
+  - first:
+      213: -1761512528926272554
+    second: particle atlas_248
+  - first:
+      213: 8548075041055670442
+    second: particle atlas_249
+  - first:
+      213: 9191442494180218940
+    second: particle atlas_250
+  - first:
+      213: -6245034332091932219
+    second: particle atlas_251
+  - first:
+      213: 97019914312563464
+    second: particle atlas_252
+  - first:
+      213: 8924705111502844078
+    second: particle atlas_253
+  - first:
+      213: -7335648196586597198
+    second: particle atlas_254
+  - first:
+      213: -6961610826869034689
+    second: particle atlas_255
+  - first:
+      213: 5741495672890925786
+    second: particle atlas_256
+  - first:
+      213: -6376538137574633322
+    second: particle atlas_257
+  - first:
+      213: -8961689929772023112
+    second: particle atlas_258
+  - first:
+      213: 5985993453067262961
+    second: particle atlas_259
+  - first:
+      213: -2517987586186350547
+    second: particle atlas_260
+  - first:
+      213: -971540790263345575
+    second: particle atlas_261
+  - first:
+      213: 2471811789468137590
+    second: particle atlas_262
+  - first:
+      213: -3271105520053829289
+    second: particle atlas_263
+  - first:
+      213: -8740930883981372052
+    second: particle atlas_264
+  - first:
+      213: 2283151751548409804
+    second: particle atlas_265
+  - first:
+      213: -65501172709748093
+    second: particle atlas_266
+  - first:
+      213: 8230644691323642805
+    second: particle atlas_267
+  - first:
+      213: -4750387808006186091
+    second: particle atlas_268
+  - first:
+      213: -5602800613281859516
+    second: particle atlas_269
+  - first:
+      213: -282617526873246627
+    second: particle atlas_270
+  - first:
+      213: 5125345638064712049
+    second: particle atlas_271
+  - first:
+      213: -7615276581751714050
+    second: particle atlas_272
+  - first:
+      213: -465771231533748523
+    second: particle atlas_273
+  - first:
+      213: -2836024196663838304
+    second: particle atlas_274
+  - first:
+      213: 9157119686458247731
+    second: particle atlas_275
+  - first:
+      213: -2477456844932717651
+    second: particle atlas_276
+  - first:
+      213: 2273897318211525808
+    second: particle atlas_277
+  - first:
+      213: 8277487662109596381
+    second: particle atlas_278
+  - first:
+      213: 4032508934461306005
+    second: particle atlas_279
+  - first:
+      213: -3518641611240052521
+    second: particle atlas_280
+  - first:
+      213: -6645064568236637498
+    second: particle atlas_281
+  - first:
+      213: -5170881504562792934
+    second: particle atlas_282
+  - first:
+      213: 949759378503948193
+    second: particle atlas_283
+  - first:
+      213: -4002514897417423680
+    second: particle atlas_284
+  - first:
+      213: -225796629997050178
+    second: particle atlas_285
+  - first:
+      213: -3019769440019388068
+    second: particle atlas_286
+  - first:
+      213: 6633771418688138791
+    second: particle atlas_287
+  - first:
+      213: 492143191308818328
+    second: particle atlas_288
+  - first:
+      213: 3042624867737121237
+    second: particle atlas_289
+  - first:
+      213: -4051464545582967645
+    second: particle atlas_290
+  - first:
+      213: 9200603004286195247
+    second: particle atlas_291
+  - first:
+      213: -21715037663478607
+    second: particle atlas_292
+  - first:
+      213: -8437746038430712343
+    second: particle atlas_293
+  - first:
+      213: -3113811473996518698
+    second: particle atlas_294
+  - first:
+      213: -7498097177445298231
+    second: particle atlas_295
+  - first:
+      213: -472369073964925336
+    second: particle atlas_296
+  - first:
+      213: -8156852969666248388
+    second: particle atlas_297
+  - first:
+      213: -7800673839833906538
+    second: particle atlas_298
+  - first:
+      213: -1668042831027470966
+    second: particle atlas_299
+  - first:
+      213: -7506886112263897337
+    second: particle atlas_300
+  - first:
+      213: -2572127024336128894
+    second: particle atlas_301
+  - first:
+      213: -931541576241793988
+    second: particle atlas_302
+  - first:
+      213: -5541030365472636520
+    second: particle atlas_303
+  - first:
+      213: -4623515618135906015
+    second: particle atlas_304
+  - first:
+      213: -1099777171913905074
+    second: particle atlas_305
+  - first:
+      213: 954952615591309978
+    second: particle atlas_306
+  - first:
+      213: 6525166072267086965
+    second: particle atlas_307
+  - first:
+      213: 8382192574973412324
+    second: particle atlas_308
+  - first:
+      213: -4012001502284576030
+    second: particle atlas_309
+  - first:
+      213: 6150809031235554006
+    second: particle atlas_310
+  - first:
+      213: 1680401788736084534
+    second: particle atlas_311
+  - first:
+      213: 3951053434655086637
+    second: particle atlas_312
+  - first:
+      213: 7748819681837850368
+    second: particle atlas_313
+  - first:
+      213: -7256252661313306410
+    second: particle atlas_314
+  - first:
+      213: 5017603719538233178
+    second: particle atlas_315
+  - first:
+      213: 4339622680621755923
+    second: particle atlas_316
+  - first:
+      213: -5816281092599075005
+    second: particle atlas_317
+  - first:
+      213: 1565376316634068818
+    second: particle atlas_318
+  - first:
+      213: 6030834751383114025
+    second: particle atlas_319
+  - first:
+      213: -8741727103850384378
+    second: particle atlas_320
+  - first:
+      213: -3436224272024809165
+    second: particle atlas_321
+  - first:
+      213: 147688064738387300
+    second: particle atlas_322
+  - first:
+      213: -5156519621683062614
+    second: particle atlas_323
+  - first:
+      213: 7044856733439362635
+    second: particle atlas_324
+  - first:
+      213: -8823540843835542238
+    second: particle atlas_325
+  - first:
+      213: -5775574016008750124
+    second: particle atlas_326
+  - first:
+      213: 9162194137165716762
+    second: particle atlas_327
+  - first:
+      213: -2438169376717658079
+    second: particle atlas_328
+  - first:
+      213: 1833568006390219641
+    second: particle atlas_329
+  - first:
+      213: -5705034343834619627
+    second: particle atlas_330
+  - first:
+      213: -5724699954979612706
+    second: particle atlas_331
+  - first:
+      213: -4699729019523626826
+    second: particle atlas_332
+  - first:
+      213: -8367070187754634589
+    second: particle atlas_333
+  - first:
+      213: 2886470171286758744
+    second: particle atlas_334
+  - first:
+      213: 3679254335834979005
+    second: particle atlas_335
+  - first:
+      213: -8254164085712844934
+    second: particle atlas_336
+  - first:
+      213: -6224869878830503321
+    second: particle atlas_337
+  - first:
+      213: 4103684051094655361
+    second: particle atlas_338
+  - first:
+      213: -4610210393081254712
+    second: particle atlas_339
+  - first:
+      213: -5589577570936399074
+    second: particle atlas_340
+  - first:
+      213: 3981564068309506944
+    second: particle atlas_341
+  - first:
+      213: -6226573291711072487
+    second: particle atlas_342
+  - first:
+      213: -3714683675136531348
+    second: particle atlas_343
+  - first:
+      213: 5596696600261656999
+    second: particle atlas_344
+  - first:
+      213: -608295785086278009
+    second: particle atlas_345
+  - first:
+      213: 583873299795642711
+    second: particle atlas_346
+  - first:
+      213: -8846415056598828338
+    second: particle atlas_347
+  - first:
+      213: -3715731392146877991
+    second: particle atlas_348
+  - first:
+      213: 4505590720482667643
+    second: particle atlas_349
+  - first:
+      213: -7486124687266826254
+    second: particle atlas_350
+  - first:
+      213: -5347427878054942434
+    second: particle atlas_351
+  - first:
+      213: -6200084853138395789
+    second: particle atlas_352
+  - first:
+      213: -780270258004925084
+    second: particle atlas_353
+  - first:
+      213: 5001933038790874287
+    second: particle atlas_354
+  - first:
+      213: -3127987003174291846
+    second: particle atlas_355
+  - first:
+      213: 7709243393497621861
+    second: particle atlas_356
+  - first:
+      213: -258710031622001078
+    second: particle atlas_357
+  - first:
+      213: -3898947192519568848
+    second: particle atlas_358
+  - first:
+      213: -1386586248603435485
+    second: particle atlas_359
+  - first:
+      213: -8808758800622497095
+    second: particle atlas_360
+  - first:
+      213: 3261230927281088495
+    second: particle atlas_361
+  - first:
+      213: -45232072572516786
+    second: particle atlas_362
+  - first:
+      213: 5003062984000217960
+    second: particle atlas_363
+  - first:
+      213: -5551710819138468591
+    second: particle atlas_364
+  - first:
+      213: 8285102141652140163
+    second: particle atlas_365
+  - first:
+      213: -4637035503470095257
+    second: particle atlas_366
+  - first:
+      213: -2282727748304164626
+    second: particle atlas_367
+  - first:
+      213: 9050253164642506001
+    second: particle atlas_368
+  - first:
+      213: 9158110924247708773
+    second: particle atlas_369
+  - first:
+      213: -1865888962347296736
+    second: particle atlas_370
+  - first:
+      213: 7516563702066685073
+    second: particle atlas_371
+  - first:
+      213: -8059437873059759382
+    second: particle atlas_372
+  - first:
+      213: -9057967263368495450
+    second: particle atlas_373
+  - first:
+      213: -2933082577259941871
+    second: particle atlas_374
+  - first:
+      213: 2161601816898871427
+    second: particle atlas_375
+  - first:
+      213: -3931135709468132432
+    second: particle atlas_376
+  - first:
+      213: -8427775922230043553
+    second: particle atlas_377
+  - first:
+      213: 3924149494538808862
+    second: particle atlas_378
+  - first:
+      213: 6063927817369016756
+    second: particle atlas_379
+  - first:
+      213: -511384568878290321
+    second: particle atlas_380
+  - first:
+      213: -155404920391990693
+    second: particle atlas_381
+  - first:
+      213: 6629877214214093568
+    second: particle atlas_382
+  - first:
+      213: -3380382308495216762
+    second: particle atlas_383
+  - first:
+      213: -4736273841355113614
+    second: particle atlas_384
+  - first:
+      213: -7751626633823697053
+    second: particle atlas_385
+  - first:
+      213: 5332594972388279790
+    second: particle atlas_386
+  - first:
+      213: 6874299786799125997
+    second: particle atlas_387
+  - first:
+      213: -6702076018494339416
+    second: particle atlas_388
+  - first:
+      213: -238612445233296216
+    second: particle atlas_389
+  - first:
+      213: -157393230078004711
+    second: particle atlas_390
+  - first:
+      213: 8710953406282385065
+    second: particle atlas_391
+  - first:
+      213: 114801043136649029
+    second: particle atlas_392
+  - first:
+      213: -5810696400091540641
+    second: particle atlas_393
+  - first:
+      213: 419878149363160683
+    second: particle atlas_394
+  - first:
+      213: -8999213491156988530
+    second: particle atlas_395
+  - first:
+      213: -5624489624856416223
+    second: particle atlas_396
+  - first:
+      213: 1638211920600285449
+    second: particle atlas_397
+  - first:
+      213: 8500946594631484670
+    second: particle atlas_398
+  - first:
+      213: 2958100899979078173
+    second: particle atlas_399
+  - first:
+      213: -6190541063388469029
+    second: particle atlas_400
+  - first:
+      213: -5094083331870334416
+    second: particle atlas_401
+  - first:
+      213: -1703505137533668652
+    second: particle atlas_402
+  - first:
+      213: 1669621978313596350
+    second: particle atlas_403
+  - first:
+      213: 2989255677797972302
+    second: particle atlas_404
+  - first:
+      213: -1985350720114767223
+    second: particle atlas_405
+  - first:
+      213: 2033169083351515125
+    second: particle atlas_406
+  - first:
+      213: 7814769321228967986
+    second: particle atlas_407
+  - first:
+      213: 6579812212409950331
+    second: particle atlas_408
+  - first:
+      213: -5767967588122895859
+    second: particle atlas_409
+  - first:
+      213: 441871884970649400
+    second: particle atlas_410
+  - first:
+      213: -2538153708315307233
+    second: particle atlas_411
+  - first:
+      213: 2792614732074197598
+    second: particle atlas_412
+  - first:
+      213: 5843137175332974839
+    second: particle atlas_413
+  - first:
+      213: -7228620838333647972
+    second: particle atlas_414
+  - first:
+      213: -2451025600158443683
+    second: particle atlas_415
+  - first:
+      213: 42202286899061881
+    second: particle atlas_416
+  - first:
+      213: 2271888464218940782
+    second: particle atlas_417
+  - first:
+      213: 4038258577221773042
+    second: particle atlas_418
+  - first:
+      213: 3487466117367292729
+    second: particle atlas_419
+  - first:
+      213: -3490565613106905201
+    second: particle atlas_420
+  - first:
+      213: 8301976931594024586
+    second: particle atlas_421
+  - first:
+      213: 7319757802233036432
+    second: particle atlas_422
+  - first:
+      213: -4062360929235475573
+    second: particle atlas_423
+  - first:
+      213: -6143960849587574983
+    second: particle atlas_424
+  - first:
+      213: -4990278158722718063
+    second: particle atlas_425
+  - first:
+      213: -7349640829340570728
+    second: particle atlas_426
+  - first:
+      213: -4923152942684631076
+    second: particle atlas_427
+  - first:
+      213: 4949936354009723773
+    second: particle atlas_428
+  - first:
+      213: -4042349723679963362
+    second: particle atlas_429
+  - first:
+      213: 8055209063152653258
+    second: particle atlas_430
+  - first:
+      213: 5351439583373961980
+    second: particle atlas_431
+  - first:
+      213: 7743717802037732432
+    second: particle atlas_432
+  - first:
+      213: -6476849215804373423
+    second: particle atlas_433
+  - first:
+      213: -2227839650726504703
+    second: particle atlas_434
+  - first:
+      213: -1452778528175436231
+    second: particle atlas_435
+  - first:
+      213: -4081715334550563095
+    second: particle atlas_436
+  - first:
+      213: 4238594861654862774
+    second: particle atlas_437
+  - first:
+      213: 7462957228306984228
+    second: particle atlas_438
+  - first:
+      213: -8673783029588135649
+    second: particle atlas_439
+  - first:
+      213: 1579969962078436716
+    second: particle atlas_440
+  - first:
+      213: -4578238609036190996
+    second: particle atlas_441
+  - first:
+      213: 5746659556560983326
+    second: particle atlas_442
+  - first:
+      213: -4482139428126353709
+    second: particle atlas_443
+  - first:
+      213: 467218917300170075
+    second: particle atlas_444
+  - first:
+      213: -9210920982658749338
+    second: particle atlas_445
+  - first:
+      213: 2373585356269003679
+    second: particle atlas_446
+  - first:
+      213: 4122276926800551195
+    second: particle atlas_447
+  - first:
+      213: 5063313934823643442
+    second: particle atlas_448
+  - first:
+      213: -6154722568148161249
+    second: particle atlas_449
+  - first:
+      213: -3611978038440654300
+    second: particle atlas_450
+  - first:
+      213: -3226682719111249842
+    second: particle atlas_451
+  - first:
+      213: -7580793764789373382
+    second: particle atlas_452
+  - first:
+      213: -7112208560796366348
+    second: particle atlas_453
+  - first:
+      213: 1422146186388614878
+    second: particle atlas_454
+  - first:
+      213: -8726718796152315147
+    second: particle atlas_455
+  - first:
+      213: -6106964862316797987
+    second: particle atlas_456
+  - first:
+      213: -1208198117830353815
+    second: particle atlas_457
+  - first:
+      213: 3657413892581359584
+    second: particle atlas_458
+  - first:
+      213: -901907820432428993
+    second: particle atlas_459
+  - first:
+      213: 4354825026006064628
+    second: particle atlas_460
+  - first:
+      213: 5106910339398263098
+    second: particle atlas_461
+  - first:
+      213: -4051424871381667577
+    second: particle atlas_462
+  - first:
+      213: -4121407108185037169
+    second: particle atlas_463
+  - first:
+      213: -8573969891753846159
+    second: particle atlas_464
+  - first:
+      213: 562595465442314501
+    second: particle atlas_465
+  - first:
+      213: 3433579082501241270
+    second: particle atlas_466
+  - first:
+      213: -1954052341723418620
+    second: particle atlas_467
+  - first:
+      213: -5198598387335374917
+    second: particle atlas_468
+  - first:
+      213: 9089351664852157024
+    second: particle atlas_469
+  - first:
+      213: -4074146872954144205
+    second: particle atlas_470
+  - first:
+      213: -6838505206459407650
+    second: particle atlas_471
+  - first:
+      213: -4361927855161198256
+    second: particle atlas_472
+  - first:
+      213: 1940629739444342954
+    second: particle atlas_473
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: particle atlas_4
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 121
+        width: 1206
+        height: 1206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02e6d512cc24bbde0800000000000000
+      internalID: -1316385021575205344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_5
+      rect:
+        serializedVersion: 2
+        x: 3596
+        y: 112
+        width: 1205
+        height: 1211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef83a3c012f960cb0800000000000000
+      internalID: -4898052580430956290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_6
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 123
+        width: 808
+        height: 1176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb42acf46168c1140800000000000000
+      internalID: 4691772342199264446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_10
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 127
+        width: 961
+        height: 1135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d282a8d92ee1a150800000000000000
+      internalID: 5882244451818177239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_11
+      rect:
+        serializedVersion: 2
+        x: 5033
+        y: 133
+        width: 1024
+        height: 1152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8584207acc4993cd0800000000000000
+      internalID: -2577865704996714408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_12
+      rect:
+        serializedVersion: 2
+        x: 6512
+        y: 1026
+        width: 139
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c561544440d25bcf0800000000000000
+      internalID: -237233909018585508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_14
+      rect:
+        serializedVersion: 2
+        x: 6683
+        y: 687
+        width: 451
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8715bd7c9a79bb5a0800000000000000
+      internalID: -6504438481348243080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_30
+      rect:
+        serializedVersion: 2
+        x: 6517
+        y: 784
+        width: 55
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b08710278d4d31020800000000000000
+      internalID: 2311425059861919755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_33
+      rect:
+        serializedVersion: 2
+        x: 6569
+        y: 508
+        width: 130
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bedfd498a98067160800000000000000
+      internalID: 7022810128752442859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_34
+      rect:
+        serializedVersion: 2
+        x: 6607
+        y: 788
+        width: 36
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9de3e394747018f50800000000000000
+      internalID: 6881789708351717081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_36
+      rect:
+        serializedVersion: 2
+        x: 6499
+        y: 747
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23f493f1b5d2d4ad0800000000000000
+      internalID: -2716465130845417678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_39
+      rect:
+        serializedVersion: 2
+        x: 6454
+        y: 627
+        width: 61
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1ac472ab0cbd62b0800000000000000
+      internalID: -5589604804340692452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_40
+      rect:
+        serializedVersion: 2
+        x: 6708
+        y: 569
+        width: 31
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6116e2a90a597ebf0800000000000000
+      internalID: -295102733555441386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_42
+      rect:
+        serializedVersion: 2
+        x: 6774
+        y: 545
+        width: 102
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9003b9e3aa703470800000000000000
+      internalID: 8372326551700832413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_48
+      rect:
+        serializedVersion: 2
+        x: 6558
+        y: 640
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a833e4a85a476ca10800000000000000
+      internalID: 1929357744713642890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_50
+      rect:
+        serializedVersion: 2
+        x: 6506
+        y: 245
+        width: 89
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cff82eefec35bdc0800000000000000
+      internalID: -3623923323959181375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_51
+      rect:
+        serializedVersion: 2
+        x: 6916
+        y: 581
+        width: 119
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db63e5ca46afd2c30800000000000000
+      internalID: 4336397326523184829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_53
+      rect:
+        serializedVersion: 2
+        x: 2205
+        y: 602
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51a3d878758bc8970800000000000000
+      internalID: 8758578061404617237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_54
+      rect:
+        serializedVersion: 2
+        x: 7039
+        y: 605
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a09c7f97e5f2d930800000000000000
+      internalID: 4166662980433121443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_56
+      rect:
+        serializedVersion: 2
+        x: 6949
+        y: 568
+        width: 45
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c580f7f026caac40800000000000000
+      internalID: 5524445737824323014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_57
+      rect:
+        serializedVersion: 2
+        x: 6998
+        y: 580
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99b2ce84284aa29a0800000000000000
+      internalID: -6257007852801741927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_60
+      rect:
+        serializedVersion: 2
+        x: 6916
+        y: 505
+        width: 125
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df62e5e272333be50800000000000000
+      internalID: 6823854103771096829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_62
+      rect:
+        serializedVersion: 2
+        x: 6688
+        y: 479
+        width: 30
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20b490606f840a6b0800000000000000
+      internalID: -5287145741032535294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_67
+      rect:
+        serializedVersion: 2
+        x: 6626
+        y: 491
+        width: 47
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f8b4d68775d73520800000000000000
+      internalID: 2681846812462332149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_68
+      rect:
+        serializedVersion: 2
+        x: 7018
+        y: 438
+        width: 46
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b960b247352a54340800000000000000
+      internalID: 4847459053249169051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_72
+      rect:
+        serializedVersion: 2
+        x: 6726
+        y: 494
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bd49b22cbacaabc0800000000000000
+      internalID: -3770978828584137294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_73
+      rect:
+        serializedVersion: 2
+        x: 6748
+        y: 419
+        width: 45
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64bee194cf7eaba80800000000000000
+      internalID: -8450186680062776506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_78
+      rect:
+        serializedVersion: 2
+        x: 6690
+        y: 412
+        width: 52
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f27c071e72c856f90800000000000000
+      internalID: -6961003546117355729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_82
+      rect:
+        serializedVersion: 2
+        x: 6621
+        y: 400
+        width: 33
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a9cdb252e0e3950800000000000000
+      internalID: 6430592870744103468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_83
+      rect:
+        serializedVersion: 2
+        x: 6666
+        y: 423
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb7d00b566c14a560800000000000000
+      internalID: 7324010119950292927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_87
+      rect:
+        serializedVersion: 2
+        x: 6746
+        y: 443
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f12ea0b6b33502f0800000000000000
+      internalID: -1007342081906171406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_90
+      rect:
+        serializedVersion: 2
+        x: 6588
+        y: 302
+        width: 238
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ced324703fbc9740800000000000000
+      internalID: 5160209487887589058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_91
+      rect:
+        serializedVersion: 2
+        x: 6876
+        y: 350
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b81551097d524230800000000000000
+      internalID: 3621559824654080182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_92
+      rect:
+        serializedVersion: 2
+        x: 6920
+        y: 319
+        width: 167
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4c30724111813170800000000000000
+      internalID: 8156442311273757771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_96
+      rect:
+        serializedVersion: 2
+        x: 6610
+        y: 270
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6344a9cece8459bf0800000000000000
+      internalID: -318268016240737226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_97
+      rect:
+        serializedVersion: 2
+        x: 6644
+        y: 263
+        width: 107
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57f4c1a15ab18d620800000000000000
+      internalID: 2799017564332380021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_98
+      rect:
+        serializedVersion: 2
+        x: 6806
+        y: 304
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35a4a568b5001c8d0800000000000000
+      internalID: -2827978697915872685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_99
+      rect:
+        serializedVersion: 2
+        x: 6946
+        y: 285
+        width: 105
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1484fbd159eec16c0800000000000000
+      internalID: -4171196830635308991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_100
+      rect:
+        serializedVersion: 2
+        x: 6797
+        y: 205
+        width: 38
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e87d832fb3d0e760800000000000000
+      internalID: 7485215398578452709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_101
+      rect:
+        serializedVersion: 2
+        x: 6834
+        y: 218
+        width: 67
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd54f5391dd661ac0800000000000000
+      internalID: -3884796881672387107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_102
+      rect:
+        serializedVersion: 2
+        x: 7006
+        y: 267
+        width: 42
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e85f40ed3fb409e0800000000000000
+      internalID: -1655988490488293148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_103
+      rect:
+        serializedVersion: 2
+        x: 7055
+        y: 268
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c85ee8edc3314ba0800000000000000
+      internalID: -6106542660268435263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_104
+      rect:
+        serializedVersion: 2
+        x: 6610
+        y: 251
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b16a4272b556a9750800000000000000
+      internalID: 6312469269886314011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_105
+      rect:
+        serializedVersion: 2
+        x: 6774
+        y: 237
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e35629a2eedd69e00800000000000000
+      internalID: 1051271578023781694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_106
+      rect:
+        serializedVersion: 2
+        x: 6603
+        y: 222
+        width: 37
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e6f0db7f5bf71830800000000000000
+      internalID: 4041975578106066659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_107
+      rect:
+        serializedVersion: 2
+        x: 6614
+        y: 207
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0fe0e348b5f115d0800000000000000
+      internalID: -3093421297265217777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: particle atlas_109
+      rect:
+        serializedVersion: 2
+        x: 6607
+        y: 188
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3770555a0f451500800000000000000
+      internalID: 366285850500167486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5c6ac831f08203845b4da4298e1778ae
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      particle atlas_0: -3904036585568096591
+      particle atlas_1: -8684442670497364885
+      particle atlas_10: 5882244451818177239
+      particle atlas_100: 7485215398578452709
+      particle atlas_101: -3884796881672387107
+      particle atlas_102: -1655988490488293148
+      particle atlas_103: -6106542660268435263
+      particle atlas_104: 6312469269886314011
+      particle atlas_105: 1051271578023781694
+      particle atlas_106: 4041975578106066659
+      particle atlas_107: -3093421297265217777
+      particle atlas_108: 7598200130754647834
+      particle atlas_109: 366285850500167486
+      particle atlas_11: -2577865704996714408
+      particle atlas_110: -2957958852708565780
+      particle atlas_111: 7692508359132741679
+      particle atlas_112: -2272596658367164222
+      particle atlas_113: 3901387307398531101
+      particle atlas_114: -1786966588521615913
+      particle atlas_115: -303542345764147972
+      particle atlas_116: -5987412972474597892
+      particle atlas_117: 1213478611376082508
+      particle atlas_12: -237233909018585508
+      particle atlas_13: 7592623476697671937
+      particle atlas_14: -6504438481348243080
+      particle atlas_15: 8228460045028172017
+      particle atlas_16: 4734592081180564769
+      particle atlas_17: -57518299065989126
+      particle atlas_18: -6500447246721422850
+      particle atlas_19: 5066701446625531059
+      particle atlas_2: 5482475941812669763
+      particle atlas_20: 3164690946723171738
+      particle atlas_21: -2461287295863398426
+      particle atlas_22: 5551566307499931161
+      particle atlas_23: -7319931947921903003
+      particle atlas_24: 9213207772860445551
+      particle atlas_25: 417579942434887924
+      particle atlas_26: 798910875885775706
+      particle atlas_27: 1829742311558228307
+      particle atlas_28: 2891852212057229315
+      particle atlas_29: -3481720071845331848
+      particle atlas_3: 5999741247511037063
+      particle atlas_30: 2311425059861919755
+      particle atlas_31: -1332968764541130777
+      particle atlas_32: -2126974392820706959
+      particle atlas_33: 7022810128752442859
+      particle atlas_34: 6881789708351717081
+      particle atlas_35: -6865943137149856080
+      particle atlas_36: -2716465130845417678
+      particle atlas_37: 2708456825371522097
+      particle atlas_38: 5094939124663877217
+      particle atlas_39: -5589604804340692452
+      particle atlas_4: -1316385021575205344
+      particle atlas_40: -295102733555441386
+      particle atlas_41: -140399422324030926
+      particle atlas_42: 8372326551700832413
+      particle atlas_43: 5157210149431045929
+      particle atlas_44: -7242323506661752505
+      particle atlas_45: -2147491563392077470
+      particle atlas_46: -7527002102546076141
+      particle atlas_47: 4119925924227960777
+      particle atlas_48: 1929357744713642890
+      particle atlas_49: -5149792555890250482
+      particle atlas_5: -4898052580430956290
+      particle atlas_50: -3623923323959181375
+      particle atlas_51: 4336397326523184829
+      particle atlas_52: -3961513207363390943
+      particle atlas_53: 8758578061404617237
+      particle atlas_54: 4166662980433121443
+      particle atlas_55: -7601574468788016533
+      particle atlas_56: 5524445737824323014
+      particle atlas_57: -6257007852801741927
+      particle atlas_58: 25302280396266851
+      particle atlas_59: 7920574199505159983
+      particle atlas_6: 4691772342199264446
+      particle atlas_60: 6823854103771096829
+      particle atlas_61: -7467468105346936467
+      particle atlas_62: -5287145741032535294
+      particle atlas_63: 4243906010047290264
+      particle atlas_64: -6548447660178142364
+      particle atlas_65: -4763716748698217343
+      particle atlas_66: 2498623967097891605
+      particle atlas_67: 2681846812462332149
+      particle atlas_68: 4847459053249169051
+      particle atlas_69: 4573356005083668184
+      particle atlas_7: -5143305764519437240
+      particle atlas_70: -1695523240867815561
+      particle atlas_71: 3885351374051937348
+      particle atlas_72: -3770978828584137294
+      particle atlas_73: -8450186680062776506
+      particle atlas_74: 6077528211835794439
+      particle atlas_75: 8969226226920166476
+      particle atlas_76: 4153765590336399037
+      particle atlas_77: 121990468779030843
+      particle atlas_78: -6961003546117355729
+      particle atlas_79: -3755060730927679057
+      particle atlas_8: 7937329264441652155
+      particle atlas_80: -4303724006336154527
+      particle atlas_81: 186409472055665293
+      particle atlas_82: 6430592870744103468
+      particle atlas_83: 7324010119950292927
+      particle atlas_84: -2931665431735900971
+      particle atlas_85: -5387726143595086182
+      particle atlas_86: 4283043510030204753
+      particle atlas_87: -1007342081906171406
+      particle atlas_88: 229477614484125226
+      particle atlas_89: -9151315392648922340
+      particle atlas_9: 4916167405589119318
+      particle atlas_90: 5160209487887589058
+      particle atlas_91: 3621559824654080182
+      particle atlas_92: 8156442311273757771
+      particle atlas_93: -4628542177955425246
+      particle atlas_94: 4336116640434367647
+      particle atlas_95: -5379955505806203135
+      particle atlas_96: -318268016240737226
+      particle atlas_97: 2799017564332380021
+      particle atlas_98: -2827978697915872685
+      particle atlas_99: -4171196830635308991
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

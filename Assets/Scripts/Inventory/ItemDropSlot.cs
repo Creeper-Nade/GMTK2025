@@ -6,36 +6,61 @@ public class ItemDropSlot : MonoBehaviour, IDropHandler
 {
     public Image previewIcon;
 
+    private InventoryItem currentItemInSlot = null;
+    private InventorySlot currentSlotUI = null;  // 当前物品的UI Slot
+
     public void OnDrop(PointerEventData eventData)
     {
         InventorySlot draggedSlot = eventData.pointerDrag?.GetComponent<InventorySlot>();
 
         if (draggedSlot != null)
         {
-            InventoryItem item = draggedSlot.GetItem();
+            InventoryItem newItem = draggedSlot.GetItem();
 
-            ReceiveItem(item);
+            // 如果已有物品，先回到背包
+            if (currentItemInSlot != null)
+            {
+                InventoryManager.Instance.AddItem(currentItemInSlot);
 
-            // 1. 从背包列表移除
-            InventoryManager.Instance.RemoveItem(item);
+                if (currentSlotUI != null)
+                {
+                    //ObjectPoolManager.Instance.ReturnObjectToPool(currentSlotUI.gameObject);
+                    Destroy(currentSlotUI.gameObject);  // 如果没用对象池
+                }
+            }
 
-            // 2. 回收 slot UI
-            //ObjectPoolManager.Instance.ReturnObjectToPool(draggedSlot.gameObject);
-            // 或
-            Destroy(draggedSlot.gameObject);//如果没用对象池
+            // 接收新物品
+            ReceiveItem(newItem, draggedSlot);
+
+            // 从背包移除新物品（因为它现在在合成槽里）
+            InventoryManager.Instance.RemoveItem(newItem);
+            Destroy(draggedSlot.gameObject);
         }
     }
 
-    public void ReceiveItem(InventoryItem item)
+    public void ReceiveItem(InventoryItem item, InventorySlot slotUI)
     {
         Debug.Log($"放入槽：{gameObject.name}，物品：{item.itemName}");
 
         if (previewIcon != null && item.icon != null)
         {
             previewIcon.sprite = item.icon;
+            previewIcon.preserveAspect = true;  // 保持原始比例
             previewIcon.enabled = true;
         }
 
-        // 这里也可以触发具体逻辑，比如开始炼药、组合等
+        // 记录当前槽的物品和UI
+        currentItemInSlot = item;
+        currentSlotUI = slotUI;
+    }
+
+
+    /// 可选：清空槽位
+    public void ClearSlot()
+    {
+        currentItemInSlot = null;
+        currentSlotUI = null;
+        previewIcon.sprite = null;
+        previewIcon.enabled = false;
     }
 }

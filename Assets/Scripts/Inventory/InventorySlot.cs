@@ -16,8 +16,20 @@ public class InventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     private void Awake()
     {
         canvas = GetComponentInParent<Canvas>();
+        if (canvas == null)
+        {
+            canvas = FindFirstObjectByType<Canvas>();
+
+        }
+
+        if (canvas == null)
+        {
+            Debug.LogError("未找到任何 Canvas，拖拽将出错！");
+        }
+
         canvasGroup = gameObject.AddComponent<CanvasGroup>();
     }
+
 
     public void SetItem(InventoryItem item)
     {
@@ -49,7 +61,9 @@ public class InventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         if (dropTarget != null && dropTarget.GetComponent<ItemDropSlot>() != null)
         {
             // 放置成功，通知目标槽处理物品
-            dropTarget.GetComponent<ItemDropSlot>().ReceiveItem(currentItem);
+            //dropTarget.GetComponent<ItemDropSlot>().ReceiveItem(currentItem);
+            dropTarget.GetComponent<ItemDropSlot>().ReceiveItem(currentItem, this);
+
 
             // 可选：隐藏或移除此 slot（例如回收）
             InventoryManager.Instance.RemoveItem(currentItem);

@@ -11,13 +11,15 @@ public class InventoryItem
 
     public int quantity = 1;
 
-    public InventoryItem(string name, Sprite iconSprite, HerbColor col, float cooldown, bool haunted, int qty = 1)
+    public InventoryItem( Sprite iconSprite, HerbColor col, float cooldown, bool haunted, int qty = 1)
     {
-        itemName = name;
+        //itemName = name;
         icon = iconSprite;
         color = col;
         cooldownTime = cooldown;
         isHaunted = haunted;
         quantity = qty;
     }
+
+
 }

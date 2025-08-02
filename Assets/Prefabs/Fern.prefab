@@ -108,9 +108,9 @@ MonoBehaviour:
   _seedling_sprite: {fileID: 4387867958176886817, guid: 8dc75c39376e67b4c8ce6eed3d7e2692, type: 3}
   _plant_sprite: {fileID: -7788876525783057647, guid: 2ea51d18884e05843b894632432aef4f, type: 3}
   Current_Time: 0
-  herbColor: 0
+  cooldownTime: 0
+  herbColor: 1
   stage: 0
-  is_haunted: 0
   _GhostPlants: []
 --- !u!61 &7560078046570786482
 BoxCollider2D:

@@ -4,18 +4,18 @@ using UnityEngine;
 public class InventoryManager : Singleton<InventoryManager>
 {
     [Header("UI")]
-    public GameObject inventoryPanel;       
-    public Transform contentParent;         
-    public GameObject slotPrefab;           
+    public GameObject inventoryPanel;
+    public Transform contentParent;
+    public GameObject slotPrefab;
 
     [Header("Data")]
     private List<InventoryItem> items = new List<InventoryItem>();
+    public int maxSlots = 6;  // 背包最多 6 个格子
 
     private void Start()
     {
         inventoryPanel.SetActive(false);
     }
-
 
     public void ToggleInventory()
     {
@@ -28,26 +28,16 @@ public class InventoryManager : Singleton<InventoryManager>
 
     public void AddItem(InventoryItem newItem)
     {
-        // 依据 itemName + color + cooldown + haunted 判断是否相同
-        InventoryItem existingItem = items.Find(i =>
-            i.itemName == newItem.itemName &&
-            i.color == newItem.color &&
-            Mathf.Approximately(i.cooldownTime, newItem.cooldownTime) &&
-            i.isHaunted == newItem.isHaunted
-        );
-
-        if (existingItem != null)
+        if (items.Count >= maxSlots)
         {
-            existingItem.quantity += newItem.quantity;
-        }
-        else
-        {
-            items.Add(newItem);
+            Debug.LogWarning("背包已满，无法添加更多物品！");
+            return;
         }
 
+        newItem.quantity = 1;  // 每个 slot 仅存 1 个
+        items.Add(newItem);
         RefreshUI();
     }
-
 
     public void RemoveItem(InventoryItem item)
     {
@@ -58,10 +48,9 @@ public class InventoryManager : Singleton<InventoryManager>
         }
     }
 
-
     private void RefreshUI()
     {
-        // 回收所有旧槽位,目前还是动态
+        // 回收所有旧槽位
         foreach (Transform child in contentParent)
         {
             ObjectPoolManager.Instance.ReturnObjectToPool(child.gameObject);

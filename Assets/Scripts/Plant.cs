@@ -43,8 +43,8 @@ public class Plant : AbstractInteractables, IHauntAction
 
 
 
-    [SerializeField] private HerbColor herbColor;
-    public HerbColor HerbColor => herbColor;
+    [SerializeField] private Color herbColor;
+    public Color HerbColor => herbColor;
 
 
     public enum Growth_Stages
@@ -193,8 +193,8 @@ public class Plant : AbstractInteractables, IHauntAction
 
     public void Haunt()
     {
-        //int index = Random.Range(0, 2);
-        int index = 1;
+        int index = Random.Range(0, 2);
+        //int index = 1;
         is_haunted = true;
         //Debug.Log(gameObject + "is ahunted");
         switch (index)

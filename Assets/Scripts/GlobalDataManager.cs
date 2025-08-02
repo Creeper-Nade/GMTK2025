@@ -37,6 +37,8 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
             AbstractInteractables[] children = room.GetComponentsInChildren<AbstractInteractables>();
             for (int i = 0; i < children.Length; i++)
             {
+                //Debug.Log(children[i]);
+                _Interactables.Add(children[i]);
                 InteractableRoomPair.Add(children[i].gameObject, room);
             }
         }
@@ -45,13 +47,16 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
         {
             plant.Current_Time = 0;
             plant.stage = Plant.Growth_Stages.none;
-            _Interactables.Add(plant);
         }
 
         foreach (AbstractInteractables interactables in _Interactables)
         {
             if (interactables.GetComponent<IHauntAction>() != null)
+            {
                 _Hauntables.Add(interactables.GetComponent<IHauntAction>());
+                //Debug.Log(interactables);
+            }
+                
         }
        // Debug.Log("Interactables size: " + _Interactables.Count);
         //Debug.Log("Hauntable size: " + _Hauntables.Count);
@@ -124,7 +129,7 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
         for (int i = 0; i < GhostNumber; i++)
         {
 
-            //Debug.Log("Attempt Haunt"+Eligible.Count);
+            Debug.Log("Attempt Haunt"+Eligible.Count);
             if (Random.value <= _HauntProbability && Eligible.Count > 0)
             {
                 IHauntAction obj = Eligible[Random.Range(0, Eligible.Count)];

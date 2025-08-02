@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 2ea51d18884e05843b894632432aef4f
+guid: d09f546ea058d0b43a7ec67f11e60937
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7788876525783057647
-    second: pngtree-young-fern-leaf-png-image_4050265_0
+      213: -1527999063147094993
+    second: Scale_0
+  - first:
+      213: 7750515782751168842
+    second: Scale_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 360
+  spritePixelsToUnits: 1300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pngtree-young-fern-leaf-png-image_4050265_0
+      name: Scale_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 360
-        height: 360
+        x: 112
+        y: 237
+        width: 1096
+        height: 869
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 11b7259211a58e390800000000000000
-      internalID: -7788876525783057647
+      spriteID: f2cdcff92f47bcae0800000000000000
+      internalID: -1527999063147094993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scale_1
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 376
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4921f85a0d5f8b60800000000000000
+      internalID: 7750515782751168842
       vertices: []
       indices: 
       edges: []
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pngtree-young-fern-leaf-png-image_4050265_0: -7788876525783057647
+      Scale_0: -1527999063147094993
+      Scale_1: 7750515782751168842
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -3365,11 +3365,6 @@ MonoBehaviour:
   inventoryPanel: {fileID: 1769929935}
   contentParent: {fileID: 364367482}
   slotPrefab: {fileID: 8617500593209052688, guid: e02b477a6c5c10a4aad855f4a687b78f, type: 3}
-  redHerbIcon: {fileID: 0}
-  blueHerbIcon: {fileID: 0}
-  greenHerbIcon: {fileID: 0}
-  yellowHerbIcon: {fileID: 0}
-  purpleHerbIcon: {fileID: 0}
 --- !u!4 &1834489331
 Transform:
   m_ObjectHideFlags: 0

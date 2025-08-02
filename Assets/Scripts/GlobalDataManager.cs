@@ -77,6 +77,7 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
         {
             if (!InteractableRoomPair[localHauntArray[i].GameObject].gameObject.activeInHierarchy)
             {
+                //Debug.Log(_HauntedObjects[i] + "exits haunt from disposal list");
                 localHauntArray[i].ExitHaunt();
                 _RemainedHauntables.Remove(localHauntArray[i]);
             }
@@ -90,30 +91,44 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
         List<IHauntAction> Eligible = new();
         foreach (IHauntAction hauntAction in _Hauntables)
         {
-            if (!InteractableRoomPair[hauntAction.GameObject].gameObject.activeInHierarchy)
+            if (!InteractableRoomPair[hauntAction.GameObject].gameObject.activeInHierarchy && !hauntAction.Is_Haunted)
+            {
+                //Debug.Log("Eligible list contains:" + hauntAction);
                 Eligible.Add(hauntAction);
+            }        
         }
+        //clean old object binded in pair
         for (int i = 0; i < GhostNumber; i++)
         {
-            //clean old object binded in pair
+            
+            //Debug.Log("GhostNumber: " + i + "Binded object: " + _HauntedObjects[i]);
             if (_HauntedObjects[i] != null)
             {
-                if (Eligible.Contains(_HauntedObjects[i]))
+                if (!InteractableRoomPair[_HauntedObjects[i].GameObject].gameObject.activeInHierarchy)
                 {
+                    //Debug.Log(_HauntedObjects[i] + "exits haunt directly");
                     _HauntedObjects[i].ExitHaunt();
+                    _HauntedObjects[i] = null;
                 }
                 else
                 {
+                    //Debug.Log(_HauntedObjects[i] + "pending on disposal");
                     _RemainedHauntables.Add(_HauntedObjects[i]);
-                    continue;
+                    Eligible.Remove(_HauntedObjects[i]);
+                    _HauntedObjects[i] = null;
                 }
             }
-            //Debug.Log("Attempt Haunt"+Eligible.Count);
             
-            if (Random.value <= _HauntProbability && Eligible.Count>0)
+        }
+        //Rebind gameobjects
+        for (int i = 0; i < GhostNumber; i++)
+        {
+
+            //Debug.Log("Attempt Haunt"+Eligible.Count);
+            if (Random.value <= _HauntProbability && Eligible.Count > 0)
             {
                 IHauntAction obj = Eligible[Random.Range(0, Eligible.Count)];
-                //Debug.Log(obj+" is haunt");
+                //Debug.Log(obj + " is haunt");
                 _HauntedObjects[i] = obj;
                 obj.Haunt();
                 Eligible.Remove(obj);

@@ -117,22 +117,24 @@ public class Plant : AbstractInteractables, IHauntAction
     }
     public override void OnInteraction()
     {
+        Debug.Log($"[OnInteraction] 被调用，植物: {plantName}, 时间: {Time.time}");
+
         if (stage == Growth_Stages.plant)
         {
-            Debug.Log("Give Item");
-            _StageNoneBehavior();
-            //implement the logic for giving item here
-            // 创建 InventoryItem，制作了草药的四个属性，物品有什么属性我在InventoryItem加一份对比就行
+            Sprite currentSprite = spriteRenderer.sprite;  // 先缓存
+            Debug.Log($"采集时植物 sprite：{currentSprite}");
+
+            _StageNoneBehavior();  // 再清空植物
+
             InventoryItem item = new InventoryItem(
                 name: plantName,
-                iconSprite: spriteRenderer.sprite,  
+                iconSprite: currentSprite,  // 用缓存的 sprite
                 col: herbColor,
                 cooldown: cooldownTime,
                 haunted: is_haunted,
                 qty: 1
             );
 
-            // 添加到背包
             InventoryManager.Instance.AddItem(item);
         }
     }

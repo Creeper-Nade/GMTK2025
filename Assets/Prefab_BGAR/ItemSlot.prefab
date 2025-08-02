@@ -216,8 +216,8 @@ MonoBehaviour:
   currentItem:
     itemName: 
     icon: {fileID: 0}
-    color: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
     cooldownTime: 0
     isHaunted: 0
     quantity: 0
-  iconImage: {fileID: 0}
+  iconImage: {fileID: 5085811069926879172}

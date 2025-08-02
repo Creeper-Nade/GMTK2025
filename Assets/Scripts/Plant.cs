@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 /// <summary>
-/// Ò©²ÄÑÕÉ«Ã¶¾Ù£¬ÓÃÓÚ·ÖÀàºÏ³É»òÏÔÊ¾
+/// Ò©ï¿½ï¿½ï¿½ï¿½É«Ã¶ï¿½Ù£ï¿½ï¿½ï¿½ï¿½Ú·ï¿½ï¿½ï¿½Ï³É»ï¿½ï¿½ï¿½Ê¾
 /// </summary>
     public enum HerbColor
     {
@@ -52,12 +52,14 @@ public class Plant : AbstractInteractables, IHauntAction
         SpeciesChange,
         NoCD
     }
-    public bool is_haunted=false;
+    private bool is_haunted=false;
     private Haunt_Types _haunt_Type;
     [SerializeField] private List<GameObject> _GhostPlants;
     private GameObject GhostPlant;
 
     public GameObject GameObject => gameObject;
+
+    bool IHauntAction.Is_Haunted => is_haunted;
     #endregion
     protected override void Awake()
     {
@@ -167,9 +169,10 @@ public class Plant : AbstractInteractables, IHauntAction
 
     public void Haunt()
     {
-        int index = Random.Range(0, 2);
-        //int index = 1;
+        //int index = Random.Range(0, 2);
+        int index = 1;
         is_haunted = true;
+        //Debug.Log(gameObject + "is ahunted");
         switch (index)
         {
             case 0:
@@ -195,13 +198,14 @@ public class Plant : AbstractInteractables, IHauntAction
     public void ExitHaunt()
     {
         is_haunted = false;
-        gameObject.SetActive(true);
+
         //Debug.Log("OnExit haunt: "+is_haunted);
         switch (_haunt_Type)
         {
             case Haunt_Types.SpeciesChange:
                 //logic for removing haunted plant
-                ObjectPoolManager.Instance.ReturnObjectToPool(GhostPlant.gameObject);
+                //Debug.Log(gameObject +"Ghost: "+ GhostPlant);
+                ObjectPoolManager.Instance.ReturnObjectToPool(GhostPlant);
                 GlobalDataManager.Instance.Plants.Remove(GhostPlant.GetComponent<Plant>());
                 break;
             case Haunt_Types.NoCD:
@@ -209,5 +213,6 @@ public class Plant : AbstractInteractables, IHauntAction
                 break;
         }
         _haunt_Type = Haunt_Types.none;
+        gameObject.SetActive(true);
     }
 }

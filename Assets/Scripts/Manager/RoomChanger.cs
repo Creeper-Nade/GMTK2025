@@ -9,6 +9,7 @@ public class RoomChanger : Singleton<RoomChanger>
     [SerializeField] private RoomBase _DefaultRoom;
     [SerializeField] private List<RoomBase> _RoomList;
     [SerializeField] private List<GameObject> _ButtonList;
+    [SerializeField] private GameObject Inventory;
 
 
     //Screen slide variables
@@ -63,6 +64,7 @@ public class RoomChanger : Singleton<RoomChanger>
         yield return new WaitForSeconds(0.17f);
         
         _currentRoom.gameObject.SetActive(false);
+        Inventory.SetActive(false);
         foreach (GameObject obj in _ButtonList)
             obj.SetActive(false);
 

@@ -160,6 +160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 72011118}
   - component: {fileID: 72011117}
+  - component: {fileID: 72011119}
   m_Layer: 0
   m_Name: PostProcessing
   m_TagString: Untagged
@@ -199,6 +200,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &72011119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72011116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87625ae7b844c0e44ada5035a21daeaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pulseDuration: 2
+  vignette: {fileID: 0}
 --- !u!1 &98787835
 GameObject:
   m_ObjectHideFlags: 0
@@ -1100,8 +1115,12 @@ MonoBehaviour:
   - {fileID: 923854908}
   - {fileID: 770274154}
   GhostNumber: 1
+  CurseGhostNumber: 1
   _HauntCooldown: 8
+  _CurseCooldown: 5
   _HauntProbability: 0.33
+  _CurseProbability: 1
+  _Failure: 0
 --- !u!4 &491962515
 Transform:
   m_ObjectHideFlags: 0
@@ -2402,6 +2421,7 @@ MonoBehaviour:
   - {fileID: 678486669}
   - {fileID: 98787835}
   - {fileID: 703663613}
+  Inventory: {fileID: 1769929935}
   _ScreenSlideTransitAnimator: {fileID: 1598017965}
 --- !u!4 &835703707
 Transform:
@@ -3844,12 +3864,12 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 351306600}
-  - {fileID: 1598017964}
   - {fileID: 1769929936}
   - {fileID: 541884972}
   - {fileID: 659739338}
   - {fileID: 483261534}
+  - {fileID: 351306600}
+  - {fileID: 1598017964}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

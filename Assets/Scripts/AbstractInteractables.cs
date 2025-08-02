@@ -10,7 +10,7 @@ public abstract class AbstractInteractables : MonoBehaviour, IPointerEnterHandle
     private int _DistortionActivate = Shader.PropertyToID("_Distortion");
     [SerializeField] private GameObject CurseParticlePrefab;
     private GameObject _CurrentCurseParticleSystem;
-    private float _CurseDuration = 9f;
+    public float _CurseDuration = 9f;
     private float _CurrentCurseTime;
 
     public bool is_cursed = false;
@@ -45,6 +45,7 @@ public abstract class AbstractInteractables : MonoBehaviour, IPointerEnterHandle
     private void FailCurse()
     {
         Debug.Log("fail for once");
+        GlobalDataManager.Instance.FailAction();
         CleanCurse();
     }
     private void CleanCurse()

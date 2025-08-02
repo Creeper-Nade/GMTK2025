@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5522112180882192067}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.46, y: -3.2049901, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -104,14 +104,17 @@ MonoBehaviour:
   _Growth_Time: 6
   spriteRenderer: {fileID: 0}
   _no_sprite: {fileID: 0}
-  _sprout_sprite: {fileID: 5585798277894361724, guid: 85944934d08c35543b88d23218d44fa2, type: 3}
+  _sprout_sprite: {fileID: -6710241550191920354, guid: 1e882c63b0f3cc54dad63f108473c619, type: 3}
   _seedling_sprite: {fileID: 4387867958176886817, guid: 8dc75c39376e67b4c8ce6eed3d7e2692, type: 3}
   _plant_sprite: {fileID: -7788876525783057647, guid: 2ea51d18884e05843b894632432aef4f, type: 3}
   Current_Time: 0
-  herbColor: 0
+  plantName: Fernleaf
+  cooldownTime: 4.5
+  herbColor: {r: 0.1251138, g: 0.8113208, b: 0.03444285, a: 0}
   stage: 0
-  is_haunted: 0
-  _GhostPlants: []
+  _GhostPlants:
+  - {fileID: 8489499944904593934, guid: 95517f2b2c90c044194c02fb7749515e, type: 3}
+  - {fileID: 1106476734330403034, guid: 9b8ba4e43d870e84eb8354367de94262, type: 3}
 --- !u!61 &7560078046570786482
 BoxCollider2D:
   m_ObjectHideFlags: 0

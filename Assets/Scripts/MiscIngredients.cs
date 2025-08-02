@@ -1,8 +1,17 @@
 using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MiscIngredients : AbstractInteractables, IHauntAction
 {
+    [Header("Properties")]
+    [SerializeField] private string NormalName;
+    [SerializeField] private List<string> WrongNames;
+    [SerializeField] private Sprite Item_Sprite;
+    [SerializeField] private Color color;
+    [SerializeField] private float Cooldown;
+    //Haunt variales
     public GameObject GameObject => gameObject;
     private bool is_haunted=false;
     public bool Is_Haunted => is_haunted;
@@ -43,14 +52,41 @@ public class MiscIngredients : AbstractInteractables, IHauntAction
         if (_haunt_Type == Haunt_Types.WrongDisplay)
         {
             Debug.Log("Give item with its properties messed up");
+            SetHauntedItemProperty();
+
         }
         else
         {
-            Debug.Log("give normal misc item");
+            InventoryItem item = new InventoryItem(
+                name: NormalName,
+                iconSprite: Item_Sprite,
+                col: color,
+                cooldown: Cooldown,
+                haunted: is_haunted,
+                qty: 1
+            );
+             // 添加到背包
+            InventoryManager.Instance.AddItem(item);
         }    
         //implement logic of giving
     }
 
+    private void SetHauntedItemProperty()
+    {
+        string wrongName = WrongNames[Random.Range(0, WrongNames.Count)]; ;
+        float wrongCD = Random.Range(0.0f, Cooldown - 0.1f);
+        wrongCD = Mathf.Round(wrongCD * 10.0f) * 0.1f;
+        InventoryItem item = new InventoryItem(
+                name: wrongName,
+                iconSprite: Item_Sprite,
+                col: color,
+                cooldown: wrongCD,
+                haunted: is_haunted,
+                qty: 1
+            );
+         // 添加到背包
+            InventoryManager.Instance.AddItem(item);
+    }
     public void ExitHaunt()
     {
         is_haunted = false;

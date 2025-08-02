@@ -43,8 +43,8 @@ public class Plant : AbstractInteractables, IHauntAction
 
 
 
-    [SerializeField] private HerbColor herbColor;
-    public HerbColor HerbColor => herbColor;
+    [SerializeField] private Color herbColor;
+    public Color HerbColor => herbColor;
 
 
     public enum Growth_Stages

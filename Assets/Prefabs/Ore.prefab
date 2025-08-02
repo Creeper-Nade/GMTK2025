@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8489499944904593934
+--- !u!1 &6413424919643138712
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5531074142095056152}
-  - component: {fileID: 7698415512810063784}
-  - component: {fileID: 2913719653426974942}
-  - component: {fileID: 988708095706338590}
+  - component: {fileID: 6825031761742568335}
+  - component: {fileID: 6540084215597095259}
+  - component: {fileID: 1337220728781636119}
+  - component: {fileID: 4543994375248642932}
   m_Layer: 0
-  m_Name: Mandrake
+  m_Name: Ore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5531074142095056152
+--- !u!4 &6825031761742568335
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8489499944904593934}
+  m_GameObject: {fileID: 6413424919643138712}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.46, y: -3.2049901, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.289, y: -1.49, z: 0.06365483}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &7698415512810063784
+--- !u!212 &6540084215597095259
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8489499944904593934}
+  m_GameObject: {fileID: 6413424919643138712}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: -761407709
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6710241550191920354, guid: 1e882c63b0f3cc54dad63f108473c619, type: 3}
+  m_Sprite: {fileID: -3650305035519995937, guid: d0318d102de3c924d93f85d930476a55, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -89,39 +89,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2913719653426974942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8489499944904593934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29b8048afe0e1a14799b8e5f2b89853b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _Growth_Time: 9
-  spriteRenderer: {fileID: 0}
-  _no_sprite: {fileID: 0}
-  _sprout_sprite: {fileID: -6710241550191920354, guid: 1e882c63b0f3cc54dad63f108473c619, type: 3}
-  _seedling_sprite: {fileID: 21300000, guid: e737e12a766d898449c302fd8a4ce367, type: 3}
-  _plant_sprite: {fileID: 9002281667106962493, guid: 51609a41360b0df4ebdc575f9be83c19, type: 3}
-  Current_Time: 0
-  plantName: Mandrake Root
-  cooldownTime: 3.6
-  herbColor: {r: 0.9528302, g: 0.6512939, b: 0.26517445, a: 0}
-  stage: 0
-  _GhostPlants:
-  - {fileID: 5522112180882192067, guid: c69662c1112c55f4e857e9d47fc76c46, type: 3}
-  - {fileID: 0}
---- !u!61 &988708095706338590
+--- !u!61 &1337220728781636119
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8489499944904593934}
+  m_GameObject: {fileID: 6413424919643138712}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -153,7 +127,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.67846155, y: 0.68}
+    oldSize: {x: 0.5376923, y: 0.63461536}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -161,3 +135,24 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4543994375248642932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6413424919643138712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33f66cc77f96174090a73ff5dc219ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NormalName: Arcane Ore
+  WrongNames:
+  - Arcane Ore
+  - "A\u0338\u0303\u0319\u0345\u035Ar\u0335\u0340\u0358\u0315\u031C\u0355c\u0335\u030C\u0353a\u0338\u0310\u030D\u031D\u0353\u0318n\u0338\u030A\u0309\u0340\u0327\u0359\u032De\u0334\u030C\u035A\u034E
+    \u0337\u0315\u0316\u0354O\u0334\u0315\u030F\u0332\u033B\u0319r\u0337\u033D\u033A\u034E\u031De\u0335\u035D\u033E\u0344\u0354\u033A\u032D\u0304\u0327\u0323"
+  - "A\u0336r\u0334c\u0334a\u0337n\u0336e\u0337 \u0334O\u0334r\u0335e\u0335"
+  Item_Sprite: {fileID: -3650305035519995937, guid: d0318d102de3c924d93f85d930476a55, type: 3}
+  color: {r: 0.32936877, g: 0.28435388, b: 0.8490566, a: 0}
+  Cooldown: 7

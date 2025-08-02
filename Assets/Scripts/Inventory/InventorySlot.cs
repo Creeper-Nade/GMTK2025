@@ -41,11 +41,29 @@ public class InventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        transform.SetParent(originalParent);
-        transform.localPosition = Vector3.zero;
         canvasGroup.blocksRaycasts = true;
+
+        // 检测是否拖入了有效槽位
+        GameObject dropTarget = eventData.pointerEnter;
+
+        if (dropTarget != null && dropTarget.GetComponent<ItemDropSlot>() != null)
+        {
+            // 放置成功，通知目标槽处理物品
+            dropTarget.GetComponent<ItemDropSlot>().ReceiveItem(currentItem);
+
+            // 可选：隐藏或移除此 slot（例如回收）
+            InventoryManager.Instance.RemoveItem(currentItem);
+        }
+        else
+        {
+            // 未放置，归位
+            transform.SetParent(originalParent);
+            transform.localPosition = Vector3.zero;
+        }
+
         isDragging = false;
     }
+
 
     public void OnPointerClick(PointerEventData eventData)
     {

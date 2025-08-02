@@ -28,7 +28,19 @@ public class Plant : AbstractInteractables, IHauntAction
     [SerializeField] private Sprite _plant_sprite;
 
     public float Current_Time;
-    
+
+    [Header("Plant Properties")]
+    [SerializeField] private string plantName;
+    //[SerializeField] private HerbColor herbColor;
+    [SerializeField] private float cooldownTime;
+
+    // is_haunted 已存在，沿用
+    public bool IsHaunted => is_haunted;
+
+    //公共访问器
+    public string PlantName => plantName;
+    public float CooldownTime => cooldownTime;
+
 
 
     [SerializeField] private HerbColor herbColor;
@@ -110,7 +122,18 @@ public class Plant : AbstractInteractables, IHauntAction
             Debug.Log("Give Item");
             _StageNoneBehavior();
             //implement the logic for giving item here
-            InventoryManager.Instance.AddMaterialByColor(HerbColor);
+            // 创建 InventoryItem，制作了草药的四个属性，物品有什么属性我在InventoryItem加一份对比就行
+            InventoryItem item = new InventoryItem(
+                name: plantName,
+                iconSprite: spriteRenderer.sprite,  
+                col: herbColor,
+                cooldown: cooldownTime,
+                haunted: is_haunted,
+                qty: 1
+            );
+
+            // 添加到背包
+            InventoryManager.Instance.AddItem(item);
         }
     }
 

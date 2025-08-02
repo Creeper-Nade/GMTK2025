@@ -30,7 +30,7 @@ public class Plant : AbstractInteractables, IHauntAction
     public float Current_Time;
 
     [Header("Plant Properties")]
-    //[SerializeField] private string plantName;
+    [SerializeField] private string plantName;
     //[SerializeField] private HerbColor herbColor;
     [SerializeField] private float cooldownTime;
 
@@ -124,7 +124,7 @@ public class Plant : AbstractInteractables, IHauntAction
             //implement the logic for giving item here
             // 创建 InventoryItem，制作了草药的四个属性，物品有什么属性我在InventoryItem加一份对比就行
             InventoryItem item = new InventoryItem(
-                //name: plantName,
+                name: plantName,
                 iconSprite: spriteRenderer.sprite,  
                 col: herbColor,
                 cooldown: cooldownTime,

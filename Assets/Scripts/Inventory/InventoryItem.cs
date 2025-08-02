@@ -13,11 +13,13 @@ public class InventoryItem
 
     public InventoryItem(string name, Sprite iconSprite, Color col, float cooldown, bool haunted, int qty = 1)
     {
-        itemName = name;
+        //itemName = name;
         icon = iconSprite;
         color = col;
         cooldownTime = cooldown;
         isHaunted = haunted;
         quantity = qty;
     }
+
+
 }

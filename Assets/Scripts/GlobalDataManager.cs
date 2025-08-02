@@ -129,7 +129,7 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
         for (int i = 0; i < GhostNumber; i++)
         {
 
-            Debug.Log("Attempt Haunt"+Eligible.Count);
+            //Debug.Log("Attempt Haunt"+Eligible.Count);
             if (Random.value <= _HauntProbability && Eligible.Count > 0)
             {
                 IHauntAction obj = Eligible[Random.Range(0, Eligible.Count)];

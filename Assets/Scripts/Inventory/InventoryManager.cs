@@ -36,6 +36,7 @@ public class InventoryManager : Singleton<InventoryManager>
 
         newItem.quantity = 1;  // 每个 slot 仅存 1 个
         items.Add(newItem);
+        
         RefreshUI();
     }
 
@@ -51,9 +52,10 @@ public class InventoryManager : Singleton<InventoryManager>
     private void RefreshUI()
     {
         // 回收所有旧槽位
-        foreach (Transform child in contentParent)
+        //iterate the Transform backward if you need to change the contents in it during iteration.
+        for (int i = contentParent.childCount - 1; i >= 0; i--)
         {
-            ObjectPoolManager.Instance.ReturnObjectToPool(child.gameObject);
+            ObjectPoolManager.Instance.ReturnObjectToPool(contentParent.GetChild(i).gameObject);
         }
 
         // 创建新槽位

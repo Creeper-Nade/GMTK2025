@@ -57,6 +57,7 @@ public class MiscIngredients : AbstractInteractables, IHauntAction
         }
         else
         {
+            Debug.Log(gameObject+ "give ingredient");
             InventoryItem item = new InventoryItem(
                 name: NormalName,
                 iconSprite: Item_Sprite,

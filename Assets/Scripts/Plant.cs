@@ -110,6 +110,7 @@ public class Plant : AbstractInteractables, IHauntAction
             Debug.Log("Give Item");
             _StageNoneBehavior();
             //implement the logic for giving item here
+            InventoryManager.Instance.AddMaterialByColor(HerbColor);
         }
     }
 

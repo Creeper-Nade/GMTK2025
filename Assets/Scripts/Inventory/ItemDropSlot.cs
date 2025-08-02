@@ -63,4 +63,10 @@ public class ItemDropSlot : MonoBehaviour, IDropHandler
         previewIcon.sprite = null;
         previewIcon.enabled = false;
     }
+
+    public InventoryItem GetCurrentItem()
+    {
+        return currentItemInSlot;
+    }
+
 }

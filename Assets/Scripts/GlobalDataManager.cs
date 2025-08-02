@@ -15,12 +15,18 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
 
     //this list is to handle all the problemetic hauntables that remains because of being active, should normally be empty.
     private List<IHauntAction> _RemainedHauntables = new();
-    [SerializeField] private int GhostNumber = 1;
+    [SerializeField] private int GhostNumber = 2;
+    [SerializeField] private int CurseGhostNumber = 1;
     [SerializeField] private float _HauntCooldown= 8;
+    [SerializeField] private float _CurseCooldown= 5;
     [Range(0.0f, 1.0f)]
     [SerializeField] private float _HauntProbability;
+    [Range(0.0f, 1.0f)]
+    [SerializeField] private float _CurseProbability;
     private IHauntAction[] _HauntedObjects = new IHauntAction[999];
+    private AbstractInteractables[] _CursedObjects = new AbstractInteractables[999];
     private bool _HauntCalled = false;
+    private bool _CurseCalled = false;
 
     protected override void Awake()
     {
@@ -56,9 +62,9 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
                 _Hauntables.Add(interactables.GetComponent<IHauntAction>());
                 //Debug.Log(interactables);
             }
-                
+
         }
-       // Debug.Log("Interactables size: " + _Interactables.Count);
+        // Debug.Log("Interactables size: " + _Interactables.Count);
         //Debug.Log("Hauntable size: " + _Hauntables.Count);
     }
 
@@ -71,9 +77,19 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
             plant.GrowthElapse();
             //Debug.Log(plant+ ": "+plant.is_haunted);
         }
+        //simulate update for cursed objects
+        for (int i = 0; i < CurseGhostNumber; i++)
+        {
+            if (_CursedObjects[i]!=null && _CursedObjects[i].is_cursed)
+            {
+                _CursedObjects[i].CurseElapse();
+            }
+        }
+        if (!_CurseCalled)
+                StartCoroutine(CallCurse());
         if (!_HauntCalled)
             StartCoroutine(CallHaunt());
-
+        
         //process the problemetic hauntables
         if (_RemainedHauntables.Count == 0) return;
 
@@ -89,6 +105,44 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
         }
     }
 
+    private IEnumerator CallCurse()
+    {
+        _CurseCalled = true;
+        //we need to ensure there is only one gameobject assigned to each ghost, or else the haunted gameobject might not be able to reset
+        List<AbstractInteractables> Eligible = new();
+        foreach (AbstractInteractables CurseAction in _Interactables)
+        {
+            if (!InteractableRoomPair[CurseAction.gameObject].gameObject.activeInHierarchy && !CurseAction.is_cursed)
+            {
+                //Debug.Log("Eligible list contains:" + hauntAction);
+                IHauntAction haunt= CurseAction.GetComponent<IHauntAction>();
+                if (haunt!=null && !haunt.Is_Haunted)
+                    Eligible.Add(CurseAction);
+            }
+        }
+        Debug.Log("eligible curse number:"+ Eligible.Count);
+        //bind objects
+        for (int i = 0; i < CurseGhostNumber; i++)
+        {
+
+            //Debug.Log("GhostNumber: " + i + "Binded object: " + _HauntedObjects[i]);
+            if (_CursedObjects[i] == null || !_CursedObjects[i].is_cursed)
+            {
+                if (Random.value <= _CurseProbability && Eligible.Count > 0)
+                {
+                    AbstractInteractables obj = Eligible[Random.Range(0, Eligible.Count)];
+                    //Debug.Log(obj + " is haunt");
+                    _CursedObjects[i] = obj;
+                    obj.Curse();
+                    Eligible.Remove(obj);
+                }
+            }
+
+        }
+        yield return new WaitForSeconds(_CurseCooldown);
+        _CurseCalled = false;
+    }
+
     private IEnumerator CallHaunt()
     {
         _HauntCalled = true;
@@ -99,13 +153,18 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
             if (!InteractableRoomPair[hauntAction.GameObject].gameObject.activeInHierarchy && !hauntAction.Is_Haunted)
             {
                 //Debug.Log("Eligible list contains:" + hauntAction);
-                Eligible.Add(hauntAction);
-            }        
+                AbstractInteractables curse = hauntAction.GameObject.GetComponent<AbstractInteractables>();
+                if (!curse.is_cursed)
+                {
+                    Eligible.Add(hauntAction);
+                }
+                
+            }
         }
         //clean old object binded in pair
         for (int i = 0; i < GhostNumber; i++)
         {
-            
+
             //Debug.Log("GhostNumber: " + i + "Binded object: " + _HauntedObjects[i]);
             if (_HauntedObjects[i] != null)
             {
@@ -123,7 +182,7 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
                     _HauntedObjects[i] = null;
                 }
             }
-            
+
         }
         //Rebind gameobjects
         for (int i = 0; i < GhostNumber; i++)

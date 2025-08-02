@@ -9681,6 +9681,7 @@ GameObject:
   - component: {fileID: 142153006507507651}
   - component: {fileID: 1859853079624026552}
   - component: {fileID: 7522023729303318098}
+  - component: {fileID: 7634120179403077412}
   m_Layer: 0
   m_Name: CurseParticle
   m_TagString: Untagged
@@ -14507,3 +14508,17 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &7634120179403077412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8961236503330503431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf3517c5615215d40ad00a960fe50373, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GhostSmoke: {fileID: 2031321741287246763}
+  BloodMist: {fileID: 4197164951611898086}

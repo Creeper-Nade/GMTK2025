@@ -80,8 +80,9 @@ public class Plant : AbstractInteractables, IHauntAction
         _haunt_Type = Haunt_Types.none;
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
-    private void OnEnable()
+    protected override void OnEnable()
     {
+        base.OnEnable();
         if (is_haunted)
         {
             //Debug.Log("OnEnabel: " + is_haunted);

@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: -761407709
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3650305035519995937, guid: d0318d102de3c924d93f85d930476a55, type: 3}
+  m_Sprite: {fileID: -3620428306841592452, guid: b01ec983390193147b86f690c7e301bb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -127,13 +127,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5376923, y: 0.63461536}
+    oldSize: {x: 2.0538461, y: 2.2538462}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.18, y: 2.37}
   m_EdgeRadius: 0
 --- !u!114 &4543994375248642932
 MonoBehaviour:
@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurseParticlePrefab: {fileID: 8961236503330503431, guid: 5955cc9e098cab245bfcf37d70fdc3f0, type: 3}
+  _CurseDuration: 9
   is_cursed: 0
   curseState: 0
   NormalName: Arcane Ore
@@ -156,6 +157,6 @@ MonoBehaviour:
   - "A\u0338\u0303\u0319\u0345\u035Ar\u0335\u0340\u0358\u0315\u031C\u0355c\u0335\u030C\u0353a\u0338\u0310\u030D\u031D\u0353\u0318n\u0338\u030A\u0309\u0340\u0327\u0359\u032De\u0334\u030C\u035A\u034E
     \u0337\u0315\u0316\u0354O\u0334\u0315\u030F\u0332\u033B\u0319r\u0337\u033D\u033A\u034E\u031De\u0335\u035D\u033E\u0344\u0354\u033A\u032D\u0304\u0327\u0323"
   - "A\u0336r\u0334c\u0334a\u0337n\u0336e\u0337 \u0334O\u0334r\u0335e\u0335"
-  Item_Sprite: {fileID: -3650305035519995937, guid: d0318d102de3c924d93f85d930476a55, type: 3}
+  Item_Sprite: {fileID: 7013172623054645490, guid: bd2be26afbb7e9a418ff6b928a94d13a, type: 3}
   color: {r: 0.32936877, g: 0.28435388, b: 0.8490566, a: 0}
   Cooldown: 7

@@ -4,8 +4,8 @@ using UnityEngine.InputSystem;
 public class PlayerControl : MonoBehaviour
 {
      private Rigidbody2D rb;
-    [SerializeField] private float speed = 5f;
-    [SerializeField] private float maxDistance = 5f;
+    public float speed = 5f;
+    public float maxDistance = 5f;
     [Range(0, 1)]
     [SerializeField] private float decelerationStart = 0.8f;
     [SerializeField] private float snapBackSpeed = 3f;

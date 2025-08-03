@@ -132,11 +132,13 @@ public abstract class AbstractInteractables : MonoBehaviour, IPointerEnterHandle
     public void OnPointerEnter(PointerEventData eventData)
     {
         Debug.Log("Enter Hover");
+        CursorManager.Instance.SetCursorLarge();
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         Debug.Log("Exit Hover");
+        CursorManager.Instance.SetCursorNormal();
     }
 
     private IEnumerator ClickEffectRoutine()

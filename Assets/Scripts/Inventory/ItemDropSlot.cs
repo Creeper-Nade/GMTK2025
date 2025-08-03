@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -7,7 +7,12 @@ public class ItemDropSlot : MonoBehaviour, IDropHandler
     public Image previewIcon;
 
     private InventoryItem currentItemInSlot = null;
-    private InventorySlot currentSlotUI = null;  // µ±Ç°ÎïÆ·µÄUI Slot
+    private InventorySlot currentSlotUI = null;  // å½“å‰ç‰©å“çš„UI Slot
+
+    private void Awake()
+    {
+        SetIconAlpha(0f);
+    }
 
     public void OnDrop(PointerEventData eventData)
     {
@@ -17,22 +22,21 @@ public class ItemDropSlot : MonoBehaviour, IDropHandler
         {
             InventoryItem newItem = draggedSlot.GetItem();
 
-            // Èç¹ûÒÑÓĞÎïÆ·£¬ÏÈ»Øµ½±³°ü
+            // å¦‚æœå·²æœ‰ç‰©å“ï¼Œå…ˆå›åˆ°èƒŒåŒ…
             if (currentItemInSlot != null)
             {
                 InventoryManager.Instance.AddItem(currentItemInSlot);
 
                 if (currentSlotUI != null)
                 {
-                    //ObjectPoolManager.Instance.ReturnObjectToPool(currentSlotUI.gameObject);
-                    Destroy(currentSlotUI.gameObject);  // Èç¹ûÃ»ÓÃ¶ÔÏó³Ø
+                    Destroy(currentSlotUI.gameObject);  // å¦‚æœæ²¡ç”¨å¯¹è±¡æ± 
                 }
             }
 
-            // ½ÓÊÕĞÂÎïÆ·
+            // æ¥æ”¶æ–°ç‰©å“
             ReceiveItem(newItem, draggedSlot);
 
-            // ´Ó±³°üÒÆ³ıĞÂÎïÆ·£¨ÒòÎªËüÏÖÔÚÔÚºÏ³É²ÛÀï£©
+            // ä»èƒŒåŒ…ç§»é™¤æ–°ç‰©å“ï¼ˆå› ä¸ºå®ƒç°åœ¨åœ¨åˆæˆæ§½é‡Œï¼‰
             InventoryManager.Instance.RemoveItem(newItem);
             Destroy(draggedSlot.gameObject);
         }
@@ -40,28 +44,30 @@ public class ItemDropSlot : MonoBehaviour, IDropHandler
 
     public void ReceiveItem(InventoryItem item, InventorySlot slotUI)
     {
-        Debug.Log($"·ÅÈë²Û£º{gameObject.name}£¬ÎïÆ·£º{item.itemName}");
+        Debug.Log($"æ”¾å…¥æ§½ï¼š{gameObject.name}ï¼Œç‰©å“ï¼š{item.itemName}");
 
         if (previewIcon != null && item.icon != null)
         {
             previewIcon.sprite = item.icon;
-            previewIcon.preserveAspect = true;  // ±£³ÖÔ­Ê¼±ÈÀı
+            previewIcon.preserveAspect = true;
             previewIcon.enabled = true;
+
+            // è®¾ç½®alphaä¸º255ï¼ˆå®Œå…¨å¯è§ï¼‰
+            SetIconAlpha(1f);
         }
 
-        // ¼ÇÂ¼µ±Ç°²ÛµÄÎïÆ·ºÍUI
         currentItemInSlot = item;
         currentSlotUI = slotUI;
     }
 
-
-    /// ¿ÉÑ¡£ºÇå¿Õ²ÛÎ»
     public void ClearSlot()
     {
         currentItemInSlot = null;
         currentSlotUI = null;
         previewIcon.sprite = null;
-        previewIcon.enabled = false;
+
+        // è®¾ç½®alphaä¸º0ï¼ˆå®Œå…¨é€æ˜ï¼‰
+        SetIconAlpha(0f);
     }
 
     public void ClearCraftSlot()
@@ -69,7 +75,9 @@ public class ItemDropSlot : MonoBehaviour, IDropHandler
         currentItemInSlot = null;
         currentSlotUI = null;
         previewIcon.sprite = null;
-        //previewIcon.enabled = false;
+
+        // è®¾ç½®alphaä¸º0ï¼ˆå®Œå…¨é€æ˜ï¼‰
+        SetIconAlpha(0f);
     }
 
     public InventoryItem GetCurrentItem()
@@ -77,4 +85,14 @@ public class ItemDropSlot : MonoBehaviour, IDropHandler
         return currentItemInSlot;
     }
 
+    // ğŸ”¹ å·¥å…·å‡½æ•°ï¼šè®¾ç½® Image çš„ alpha å€¼
+    private void SetIconAlpha(float alpha)
+    {
+        if (previewIcon != null)
+        {
+            Color color = previewIcon.color;
+            color.a = alpha;
+            previewIcon.color = color;
+        }
+    }
 }

@@ -28,6 +28,6 @@ public class UIController : MonoBehaviour
     {
         animator.SetTrigger(_ExitHash);
         yield return new WaitForSecondsRealtime(2);
-        Debug.Log("To Title Screen");
+        Application.Quit();
     }
 }

@@ -64,6 +64,14 @@ public class ItemDropSlot : MonoBehaviour, IDropHandler
         previewIcon.enabled = false;
     }
 
+    public void ClearCraftSlot()
+    {
+        currentItemInSlot = null;
+        currentSlotUI = null;
+        previewIcon.sprite = null;
+        //previewIcon.enabled = false;
+    }
+
     public InventoryItem GetCurrentItem()
     {
         return currentItemInSlot;

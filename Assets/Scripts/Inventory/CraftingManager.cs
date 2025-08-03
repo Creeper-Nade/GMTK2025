@@ -1,4 +1,3 @@
-// CraftingManager.cs
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
@@ -6,10 +5,7 @@ using System.Collections.Generic;
 public class CraftingManager : MonoBehaviour
 {
     public List<ItemDropSlot> craftingSlots;  // 四个合成槽
-    public Image resultPreviewIcon;
-
-    public GameObject potionPrefab;  // 预制体，用于生成 PotionItem
-    public Transform potionParent;   // 放置生成的 PotionItem
+    //public Image resultPreviewIcon;
 
     public void CombineItems()
     {
@@ -61,32 +57,31 @@ public class CraftingManager : MonoBehaviour
             }
         }
 
-        // 生成 PotionItem
-        GameObject newPotionGO = Instantiate(potionPrefab, potionParent);
-        PotionItem potionComponent = newPotionGO.GetComponent<PotionItem>();
-        if (potionComponent != null)
-        {
-            potionComponent.SetPotion(
-                sprite: itemsToCombine[0].icon,  // 可定制图标
-                id: combinedName,
-                color: combinedColor,
-                cooldown: maxCooldown,
-                haunted: isHaunted
-            );
-        }
+        //创建 InventoryItem
+        InventoryItem newItem = new InventoryItem(
+            name: combinedName,
+            iconSprite: itemsToCombine[0].icon,
+            col: combinedColor,
+            cooldown: maxCooldown,
+            haunted: isHaunted,
+            qty: 1
+        );
 
-        // 显示预览图标
-        if (resultPreviewIcon != null)
+        //提交药水给 PotionSubmitPanel
+        PotionSubmitPanel.Instance.SubmitPotion(newItem);
+
+        // 显示预览图标（可选）
+        /*if (resultPreviewIcon != null)
         {
-            resultPreviewIcon.sprite = itemsToCombine[0].icon;
+            resultPreviewIcon.sprite = newItem.icon;
             resultPreviewIcon.color = combinedColor;
             resultPreviewIcon.enabled = true;
-        }
+        }*/
 
         // 清空槽位
         foreach (var slot in craftingSlots)
         {
-            slot.ClearSlot();
+            slot.ClearCraftSlot();
         }
 
         Debug.Log("合成成功：" + combinedName);

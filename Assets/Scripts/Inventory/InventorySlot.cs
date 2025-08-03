@@ -13,6 +13,8 @@ public class InventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     private bool isDragging = false;
 
+    private bool isTooltipVisible = false;  // 新增字段
+
     private void Awake()
     {
         canvas = GetComponentInParent<Canvas>();
@@ -81,14 +83,38 @@ public class InventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (isDragging) return; // 忽略拖拽状态的点击
+        if (isDragging) return;
 
-        Debug.Log("点击物品: " + currentItem.itemName);
-        // 执行查看、使用物品等逻辑
+        if (!ItemTooltip.IsVisible)
+        {
+            string info = $"{currentItem.itemName}\nCooldown Time: {currentItem.cooldownTime:F1}s";
+            Vector2 mousePos = eventData.position;
+            ItemTooltip.Instance.ShowTooltip(info, mousePos);
+        }
+        else
+        {
+            ItemTooltip.Instance.HideTooltip();
+        }
     }
+
 
     public InventoryItem GetItem()
     {
         return currentItem;
     }
+
+    /*public void OnPointerEnter(PointerEventData eventData)
+    {
+        if (currentItem != null)
+        {
+            string info = $"{currentItem.itemName}\nCooldown Time: {currentItem.cooldownTime:F1}s";
+            Vector2 mousePos = eventData.position;
+            ItemTooltip.Instance.ShowTooltip(info, mousePos);
+        }
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        ItemTooltip.Instance.HideTooltip();
+    }*/
 }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 85944934d08c35543b88d23218d44fa2
+guid: 1149a4757f67ac24da3808a40ae1855a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5585798277894361724
-    second: Brawl_Sprout_0
+      213: 7501387830980884940
+    second: frame_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Brawl_Sprout_0
+      name: frame_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 547
-        height: 401
+        x: 122
+        y: 393
+        width: 1069
+        height: 445
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c72d1ec50fdb48d40800000000000000
-      internalID: 5585798277894361724
+      spriteID: cc9bd0cfc784a1860800000000000000
+      internalID: 7501387830980884940
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Brawl_Sprout_0: 5585798277894361724
+      frame_0: 7501387830980884940
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class GlobalDataManager : Singleton<GlobalDataManager>
 {
+    //Global Timer
+    private float _RoundDuration = 1080f;
+    public float _RoundTimer;
     [Header("UI Animation")]
     
     [SerializeField] private Animator _JumpscareAnimator;
@@ -42,6 +45,7 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
     private bool _VignetteFadeOutCalled = false;
 
     public int _Failure;
+    private bool ran_lose=false;
 
     protected override void Awake()
     {
@@ -50,7 +54,7 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
         //set jumpscare ui to inactive at beginning
         _JumpscareAnimator.gameObject.SetActive(false);
         _DeathScreenAnimator.gameObject.SetActive(false);
-       
+
         // Debug.Log("Interactables size: " + _Interactables.Count);
         //Debug.Log("Hauntable size: " + _Hauntables.Count);
     }
@@ -112,6 +116,14 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
     // Update is called once per frame
     void Update()
     {
+        //Global Timer, auto lost if taking longer than this time
+        _RoundTimer= Mathf.Min(_RoundTimer + Time.deltaTime, _RoundDuration);
+        if (_RoundTimer >= _RoundDuration && !ran_lose)
+        {
+            LoseEffect();
+        }
+        
+
         //simulate Update in disabled plants
         foreach (Plant plant in Plants)
         {
@@ -316,6 +328,7 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
     }
     private void LoseEffect()
     {
+        ran_lose = true;
         _JumpscareAnimator.gameObject.SetActive(true);
         StartCoroutine(ShowDeathScreen());
     }

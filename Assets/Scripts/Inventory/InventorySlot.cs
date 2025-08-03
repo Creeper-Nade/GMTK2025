@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler
+public class InventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     public InventoryItem currentItem;
     public Image iconImage;
@@ -19,7 +19,6 @@ public class InventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         if (canvas == null)
         {
             canvas = FindFirstObjectByType<Canvas>();
-
         }
 
         if (canvas == null)
@@ -29,7 +28,6 @@ public class InventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
         canvasGroup = gameObject.AddComponent<CanvasGroup>();
     }
-
 
     public void SetItem(InventoryItem item)
     {
@@ -44,6 +42,9 @@ public class InventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         originalParent = transform.parent;
         transform.SetParent(canvas.transform);
         canvasGroup.blocksRaycasts = false;
+
+        // 拖拽开始时隐藏 Tooltip
+        ItemTooltip.Instance.HideTooltip();
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -55,36 +56,20 @@ public class InventorySlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     {
         canvasGroup.blocksRaycasts = true;
 
-        // 检测是否拖入了有效槽位
         GameObject dropTarget = eventData.pointerEnter;
 
         if (dropTarget != null && dropTarget.GetComponent<ItemDropSlot>() != null)
         {
-            // 放置成功，通知目标槽处理物品
-            //dropTarget.GetComponent<ItemDropSlot>().ReceiveItem(currentItem);
             dropTarget.GetComponent<ItemDropSlot>().ReceiveItem(currentItem, this);
-
-
-            // 可选：隐藏或移除此 slot（例如回收）
             InventoryManager.Instance.RemoveItem(currentItem);
         }
         else
         {
-            // 未放置，归位
             transform.SetParent(originalParent);
             transform.localPosition = Vector3.zero;
         }
 
         isDragging = false;
-    }
-
-
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        if (isDragging) return; // 忽略拖拽状态的点击
-
-        Debug.Log("点击物品: " + currentItem.itemName);
-        // 执行查看、使用物品等逻辑
     }
 
     public InventoryItem GetItem()

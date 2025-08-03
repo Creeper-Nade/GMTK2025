@@ -26,6 +26,7 @@ public class Plant : AbstractInteractables, IHauntAction
     [SerializeField] private Sprite _sprout_sprite;
     [SerializeField] private Sprite _seedling_sprite;
     [SerializeField] private Sprite _plant_sprite;
+    [SerializeField] private Sprite _Item_Sprite;
 
     public float Current_Time;
 
@@ -122,14 +123,14 @@ public class Plant : AbstractInteractables, IHauntAction
 
         if (stage == Growth_Stages.plant)
         {
-            Sprite currentSprite = spriteRenderer.sprite;  // 先缓存
-            Debug.Log($"采集时植物 sprite：{currentSprite}");
+            //Sprite currentSprite = spriteRenderer.sprite;  // 先缓存
+            Debug.Log($"采集时植物 sprite：{_Item_Sprite}");
 
             _StageNoneBehavior();  // 再清空植物
 
             InventoryItem item = new InventoryItem(
                 name: plantName,
-                iconSprite: currentSprite,  // 用缓存的 sprite
+                iconSprite: _Item_Sprite,  
                 col: herbColor,
                 cooldown: cooldownTime,
                 haunted: is_haunted,

@@ -78,12 +78,12 @@ SpriteRenderer:
   m_SortingLayerID: -761407709
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6710241550191920354, guid: 1e882c63b0f3cc54dad63f108473c619, type: 3}
+  m_Sprite: {fileID: -4493105828818198075, guid: 4ba621bb772fccf4dbda8bfeda13a578, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.3569231, y: 1.3123077}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -108,13 +108,14 @@ MonoBehaviour:
   _Growth_Time: 9
   spriteRenderer: {fileID: 0}
   _no_sprite: {fileID: 0}
-  _sprout_sprite: {fileID: -6710241550191920354, guid: 1e882c63b0f3cc54dad63f108473c619, type: 3}
-  _seedling_sprite: {fileID: 21300000, guid: e737e12a766d898449c302fd8a4ce367, type: 3}
-  _plant_sprite: {fileID: 9002281667106962493, guid: 51609a41360b0df4ebdc575f9be83c19, type: 3}
+  _sprout_sprite: {fileID: -1581888854661022347, guid: b91451694bd72b84d810e744b7f3ca9f, type: 3}
+  _seedling_sprite: {fileID: 7975554766480393932, guid: 6744a2c5657a9af4ea61a313bdc4a8cb, type: 3}
+  _plant_sprite: {fileID: -4493105828818198075, guid: 4ba621bb772fccf4dbda8bfeda13a578, type: 3}
+  _Item_Sprite: {fileID: 6796616472097357210, guid: eb28df027feb6e741b705b96546e27b1, type: 3}
   Current_Time: 0
   plantName: Mandrake Root
   cooldownTime: 3.6
-  herbColor: {r: 0.9528302, g: 0.6512939, b: 0.26517445, a: 0}
+  herbColor: {r: 0.60784316, g: 0.52156866, b: 0.3372549, a: 0}
   stage: 0
   _GhostPlants:
   - {fileID: 5522112180882192067, guid: c69662c1112c55f4e857e9d47fc76c46, type: 3}
@@ -153,15 +154,15 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.75}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.67846155, y: 0.68}
-    newSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.4907693, y: 1.4584615}
+    newSize: {x: 1.3569231, y: 1.3123077}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 1.6}
   m_EdgeRadius: 0

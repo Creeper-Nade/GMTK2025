@@ -1,13 +1,18 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class PotionItem : MonoBehaviour, IHauntAction
+public class PotionItem : MonoBehaviour, IHauntAction, IPointerEnterHandler, IPointerExitHandler
 {
     public Image icon;
     public string potionID;
     public Color potionColor;
     public float cooldownTime;
     public bool isHaunted;
+
+    // 新增引用
+    public GameObject submitButton;
+    public GameObject destroyButton;
 
     public GameObject GameObject => throw new System.NotImplementedException();
 
@@ -20,6 +25,8 @@ public class PotionItem : MonoBehaviour, IHauntAction
         potionColor = color;
         cooldownTime = cooldown;
         isHaunted = haunted;
+
+        HideButtons();
     }
 
     public void Haunt()
@@ -29,14 +36,8 @@ public class PotionItem : MonoBehaviour, IHauntAction
         Transform parent = transform.parent;
         int selfIndex = transform.GetSiblingIndex();
         int siblingCount = parent.childCount;
+        if (siblingCount <= 1) return;
 
-        if (siblingCount <= 1)
-        {
-            Debug.LogWarning("只有一个药剂，无法交换位置");
-            return;
-        }
-
-        // 选择另一个药剂并交换位置
         int otherIndex = Random.Range(0, siblingCount);
         while (otherIndex == selfIndex)
             otherIndex = Random.Range(0, siblingCount);
@@ -44,11 +45,43 @@ public class PotionItem : MonoBehaviour, IHauntAction
         Transform other = parent.GetChild(otherIndex);
         other.SetSiblingIndex(selfIndex);
         transform.SetSiblingIndex(otherIndex);
-
-        // 强制刷新 UI 排列
         LayoutRebuilder.ForceRebuildLayoutImmediate((RectTransform)parent);
+    }
 
-        Debug.Log($"[Haunt] {potionID} 与 {other.name} 互换位置");
+    // 鼠标进入显示按钮
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        ShowButtons();
+    }
+
+    // 鼠标移出隐藏按钮
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        HideButtons();
+    }
+
+    private void ShowButtons()
+    {
+        if (submitButton != null) submitButton.SetActive(true);
+        if (destroyButton != null) destroyButton.SetActive(true);
+    }
+
+    private void HideButtons()
+    {
+        if (submitButton != null) submitButton.SetActive(false);
+        if (destroyButton != null) destroyButton.SetActive(false);
+    }
+
+    public void OnSubmitClicked()
+    {
+        Debug.Log($"提交：{potionID}");
+        // TODO: 调用你的提交逻辑
+    }
+
+    public void OnDestroyClicked()
+    {
+        Debug.Log($"销毁：{potionID}");
+        Destroy(gameObject);
     }
 
     public void ExitHaunt()

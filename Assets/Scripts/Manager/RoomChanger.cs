@@ -11,8 +11,7 @@ public class RoomChanger : Singleton<RoomChanger>
     [SerializeField] private List<GameObject> _ButtonList;
     [SerializeField] private GameObject Inventory;
     [SerializeField] private GameObject potionSubmitPanel;
-
-
+    [SerializeField] private GameObject orderPanel;
 
     //Screen slide variables
     [SerializeField] private Animator _ScreenSlideTransitAnimator;
@@ -105,6 +104,18 @@ public class RoomChanger : Singleton<RoomChanger>
         {
             if (potionSubmitPanel != null)
                 potionSubmitPanel.SetActive(false);
+        }
+
+        // 如果是 AlchemyRoom，显示订单 UI
+        if (_currentRoom.name == "AlchemyRoom")
+        {
+            if (orderPanel != null)
+                orderPanel.SetActive(true);
+        }
+        else
+        {
+            if (orderPanel != null)
+                orderPanel.SetActive(false);
         }
 
         _currentRoom.init();

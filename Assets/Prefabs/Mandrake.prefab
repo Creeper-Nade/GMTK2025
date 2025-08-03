@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8489499944904593934}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.46, y: -3.2049901, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: -761407709
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2223b0a570b66ee42b3e0a79f0789b2a, type: 3}
+  m_Sprite: {fileID: -6710241550191920354, guid: 1e882c63b0f3cc54dad63f108473c619, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,17 +101,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b8048afe0e1a14799b8e5f2b89853b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CurseParticlePrefab: {fileID: 8961236503330503431, guid: 5955cc9e098cab245bfcf37d70fdc3f0, type: 3}
+  is_cursed: 0
+  curseState: 0
   _Growth_Time: 9
   spriteRenderer: {fileID: 0}
   _no_sprite: {fileID: 0}
-  _sprout_sprite: {fileID: 5585798277894361724, guid: 85944934d08c35543b88d23218d44fa2, type: 3}
-  _seedling_sprite: {fileID: -2954226046686513323, guid: e737e12a766d898449c302fd8a4ce367, type: 3}
+  _sprout_sprite: {fileID: -6710241550191920354, guid: 1e882c63b0f3cc54dad63f108473c619, type: 3}
+  _seedling_sprite: {fileID: 21300000, guid: e737e12a766d898449c302fd8a4ce367, type: 3}
   _plant_sprite: {fileID: 9002281667106962493, guid: 51609a41360b0df4ebdc575f9be83c19, type: 3}
   Current_Time: 0
-  herbColor: 0
+  plantName: Mandrake Root
+  cooldownTime: 3.6
+  herbColor: {r: 0.9528302, g: 0.6512939, b: 0.26517445, a: 0}
   stage: 0
-  is_haunted: 0
-  _GhostPlants: []
+  _GhostPlants:
+  - {fileID: 5522112180882192067, guid: c69662c1112c55f4e857e9d47fc76c46, type: 3}
+  - {fileID: 0}
 --- !u!61 &988708095706338590
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -150,7 +156,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 0.67846155, y: 0.68}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

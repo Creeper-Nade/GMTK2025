@@ -38,13 +38,13 @@ public class Plant : AbstractInteractables, IHauntAction
     public bool IsHaunted => is_haunted;
 
     //公共访问器
-    public string PlantName => plantName;
+    //public string PlantName => plantName;
     public float CooldownTime => cooldownTime;
 
 
 
-    [SerializeField] private HerbColor herbColor;
-    public HerbColor HerbColor => herbColor;
+    [SerializeField] private Color herbColor;
+    public Color HerbColor => herbColor;
 
 
     public enum Growth_Stages
@@ -80,8 +80,9 @@ public class Plant : AbstractInteractables, IHauntAction
         _haunt_Type = Haunt_Types.none;
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
-    private void OnEnable()
+    protected override void OnEnable()
     {
+        base.OnEnable();
         if (is_haunted)
         {
             //Debug.Log("OnEnabel: " + is_haunted);
@@ -117,22 +118,24 @@ public class Plant : AbstractInteractables, IHauntAction
     }
     public override void OnInteraction()
     {
+        Debug.Log($"[OnInteraction] 被调用，植物: {plantName}, 时间: {Time.time}");
+
         if (stage == Growth_Stages.plant)
         {
-            Debug.Log("Give Item");
-            _StageNoneBehavior();
-            //implement the logic for giving item here
-            // 创建 InventoryItem，制作了草药的四个属性，物品有什么属性我在InventoryItem加一份对比就行
+            Sprite currentSprite = spriteRenderer.sprite;  // 先缓存
+            Debug.Log($"采集时植物 sprite：{currentSprite}");
+
+            _StageNoneBehavior();  // 再清空植物
+
             InventoryItem item = new InventoryItem(
                 name: plantName,
-                iconSprite: spriteRenderer.sprite,  
+                iconSprite: currentSprite,  // 用缓存的 sprite
                 col: herbColor,
                 cooldown: cooldownTime,
                 haunted: is_haunted,
                 qty: 1
             );
 
-            // 添加到背包
             InventoryManager.Instance.AddItem(item);
         }
     }
@@ -193,8 +196,8 @@ public class Plant : AbstractInteractables, IHauntAction
 
     public void Haunt()
     {
-        //int index = Random.Range(0, 2);
-        int index = 1;
+        int index = Random.Range(0, 2);
+        //int index = 1;
         is_haunted = true;
         //Debug.Log(gameObject + "is ahunted");
         switch (index)

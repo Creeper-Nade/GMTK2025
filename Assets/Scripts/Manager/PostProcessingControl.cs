@@ -6,6 +6,9 @@ using UnityEngine.Rendering.Universal;
 
 public class PostProcessingControl : Singleton<PostProcessingControl>
 {
+    //ui
+    [SerializeField] private CanvasGroup GhostFace;
+    //post processing
     private Volume _postProcessVolume;
     [SerializeField] private float _pulseDuration = 2f; // Time for film grain pulse
     public Vignette vignette;
@@ -65,6 +68,7 @@ public class PostProcessingControl : Singleton<PostProcessingControl>
         {
             elapsed += Time.deltaTime;
             _grain.intensity.value = Mathf.Lerp(0, 1, elapsed / (_pulseDuration / 2));
+            GhostFace.alpha= Mathf.Lerp(0, 0.2f, elapsed / (_pulseDuration / 2));
             yield return null;
         }
 
@@ -74,6 +78,7 @@ public class PostProcessingControl : Singleton<PostProcessingControl>
         {
             elapsed += Time.deltaTime;
             _grain.intensity.value = Mathf.Lerp(1, 0, elapsed / (_pulseDuration / 2));
+            GhostFace.alpha= Mathf.Lerp(0.2f, 0, elapsed / (_pulseDuration / 2));
             yield return null;
         }
 

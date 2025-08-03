@@ -19,6 +19,9 @@ public class RoomChanger : Singleton<RoomChanger>
     private int _SlideDownHash = Animator.StringToHash("SlideDown");
     private int _SlideUpHash = Animator.StringToHash("SlideUp");
 
+    [SerializeField] private List<GameObject> DefaultRoomObjects;
+
+
     private RoomBase _currentRoom;
     private void Start()
     {
@@ -58,18 +61,32 @@ public class RoomChanger : Singleton<RoomChanger>
             StartCoroutine(ExitRoom(_currentRoom.BackRoom, _SlideUpHash));
     }
 
-    private IEnumerator ExitRoom(RoomBase TargetRoom, int AnimHash)
+    private IEnumerator ExitRoom(RoomBase targetRoom, int animHash)
     {
-        _ScreenSlideTransitAnimator.SetTrigger(AnimHash);
+        _ScreenSlideTransitAnimator.SetTrigger(animHash);
         yield return new WaitForSeconds(0.17f);
-        
+
         _currentRoom.gameObject.SetActive(false);
         Inventory.SetActive(false);
         foreach (GameObject obj in _ButtonList)
             obj.SetActive(false);
 
-        _currentRoom = TargetRoom;
+        // 隐藏 FrontRoom 专属物体
+        foreach (GameObject obj in DefaultRoomObjects)
+            obj.SetActive(false);
+
+        _currentRoom = targetRoom;
         _currentRoom.gameObject.SetActive(true);
+
+        // 如果是 FrontRoom，激活 FrontRoom 专属物体
+        if (_currentRoom == _DefaultRoom)  
+        {
+            foreach (GameObject obj in DefaultRoomObjects)
+                obj.SetActive(true);
+        }
+
+        _currentRoom.init();
     }
+
 
 }

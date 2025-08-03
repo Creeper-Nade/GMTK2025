@@ -2706,6 +2706,10 @@ MonoBehaviour:
   - {fileID: 693647089}
   - {fileID: 1701501577}
   - {fileID: 517876918}
+  possibleIcons:
+  - {fileID: -3482409441972251692, guid: 6843df10f9518124fb18d04cbf8cc8a3, type: 3}
+  - {fileID: 3942423366589864966, guid: aa7920102c4764749983acbf43eee1cf, type: 3}
+  - {fileID: 288751711024197822, guid: 5fe7f57ff6178524994f69fb4261c502, type: 3}
 --- !u!4 &711318027
 Transform:
   m_ObjectHideFlags: 0

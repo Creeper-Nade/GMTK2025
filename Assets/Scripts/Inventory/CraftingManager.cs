@@ -7,6 +7,8 @@ public class CraftingManager : MonoBehaviour
     public List<ItemDropSlot> craftingSlots;  // 四个合成槽
     //public Image resultPreviewIcon;
 
+    public List<Sprite> possibleIcons;
+
     public void CombineItems()
     {
         List<InventoryItem> itemsToCombine = new List<InventoryItem>();
@@ -58,9 +60,20 @@ public class CraftingManager : MonoBehaviour
         }
 
         //创建 InventoryItem
+        Sprite randomIcon = null;
+        if (possibleIcons != null && possibleIcons.Count > 0)
+        {
+            int index = Random.Range(0, possibleIcons.Count);
+            randomIcon = possibleIcons[index];
+        }
+        else
+        {
+            randomIcon = itemsToCombine[0].icon;
+        }
+
         InventoryItem newItem = new InventoryItem(
             name: combinedName,
-            iconSprite: itemsToCombine[0].icon,
+            iconSprite: randomIcon,
             col: combinedColor,
             cooldown: maxCooldown,
             haunted: isHaunted,

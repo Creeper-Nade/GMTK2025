@@ -11,7 +11,7 @@ public class RoomChanger : Singleton<RoomChanger>
     [SerializeField] private List<GameObject> _ButtonList;
     [SerializeField] private GameObject Inventory;
     [SerializeField] private GameObject potionSubmitPanel;
-    [SerializeField] private GameObject orderPanel;
+    [SerializeField] private GameObject orderImage;
 
     //Screen slide variables
     [SerializeField] private Animator _ScreenSlideTransitAnimator;
@@ -90,6 +90,31 @@ public class RoomChanger : Singleton<RoomChanger>
         }
         _currentRoom.gameObject.SetActive(true);
 
+        // 如果是 SubmissionRoom，激活 SubmissionRoom 专属物体
+        if (_currentRoom.name == "SubmissionRoom")
+        {
+            if (potionSubmitPanel != null)
+                potionSubmitPanel.SetActive(true);
+        }
+        else
+        {
+            if (potionSubmitPanel != null)
+                potionSubmitPanel.SetActive(false);
+        }
+
+        // 如果是 AlchemyRoom，显示订单 UI
+        if (_currentRoom.name == "AlchemyRoom")
+        {
+            if (orderImage != null)
+                orderImage.SetActive(true);
+        }
+        else
+        {
+            if (orderImage != null)
+                orderImage.SetActive(false);
+        }
+
+        _currentRoom.init();
 
     }
 

@@ -10,6 +10,8 @@ public class RoomChanger : Singleton<RoomChanger>
     [SerializeField] private List<RoomBase> _RoomList;
     [SerializeField] private List<GameObject> _ButtonList;
     [SerializeField] private GameObject Inventory;
+    [SerializeField] private GameObject potionSubmitPanel;
+
 
 
     //Screen slide variables
@@ -35,6 +37,9 @@ public class RoomChanger : Singleton<RoomChanger>
         {
             buttom.SetActive(false);
         }
+        if (potionSubmitPanel != null)
+            potionSubmitPanel.SetActive(false);
+
         _currentRoom.gameObject.SetActive(true);
         _currentRoom.init();
     }
@@ -85,7 +90,21 @@ public class RoomChanger : Singleton<RoomChanger>
                 obj.SetActive(true);
         }
 
+        // 如果是 SubmissionRoom，激活 SubmissionRoom 专属物体
+        if (_currentRoom.name == "SubmissionRoom")
+        {
+            if (potionSubmitPanel != null)
+                potionSubmitPanel.SetActive(true);
+        }
+        else
+        {
+            if (potionSubmitPanel != null)
+                potionSubmitPanel.SetActive(false);
+        }
+
         _currentRoom.init();
+
+
     }
 
 

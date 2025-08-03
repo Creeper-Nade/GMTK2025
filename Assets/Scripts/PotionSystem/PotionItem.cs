@@ -1,24 +1,17 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
 
-public class PotionItem : MonoBehaviour, IPointerClickHandler, IHauntAction
+public class PotionItem : MonoBehaviour, IHauntAction
 {
     public Image icon;
     public string potionID;
-
     public Color potionColor;
     public float cooldownTime;
     public bool isHaunted;
-    bool IHauntAction.Is_Haunted => isHaunted;
 
-    private RectTransform rectTransform;
-    public GameObject GameObject => gameObject;
+    public GameObject GameObject => throw new System.NotImplementedException();
 
-    private void Awake()
-    {
-        rectTransform = GetComponent<RectTransform>();
-    }
+    public bool Is_Haunted => throw new System.NotImplementedException();
 
     public void SetPotion(Sprite sprite, string id, Color color, float cooldown, bool haunted)
     {
@@ -29,30 +22,38 @@ public class PotionItem : MonoBehaviour, IPointerClickHandler, IHauntAction
         isHaunted = haunted;
     }
 
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        if (eventData.button == PointerEventData.InputButton.Left)
-        {
-            Debug.Log($"查看药剂：{potionID}, 冷却时间：{cooldownTime}s");
-        }
-        else if (eventData.button == PointerEventData.InputButton.Right)
-        {
-            Debug.Log($"丢弃药剂：{potionID}");
-            Destroy(gameObject);
-        }
-    }
-
     public void Haunt()
     {
         if (!isHaunted) return;
-        Vector2 randomOffset = new Vector2(Random.Range(-100f, 100f), Random.Range(-50f, 50f));
-        rectTransform.anchoredPosition += randomOffset;
-        Debug.Log($"药剂 {potionID} 被闹鬼，移动到新位置！");
+
+        Transform parent = transform.parent;
+        int selfIndex = transform.GetSiblingIndex();
+        int siblingCount = parent.childCount;
+
+        if (siblingCount <= 1)
+        {
+            Debug.LogWarning("只有一个药剂，无法交换位置");
+            return;
+        }
+
+        // 选择另一个药剂并交换位置
+        int otherIndex = Random.Range(0, siblingCount);
+        while (otherIndex == selfIndex)
+            otherIndex = Random.Range(0, siblingCount);
+
+        Transform other = parent.GetChild(otherIndex);
+        other.SetSiblingIndex(selfIndex);
+        transform.SetSiblingIndex(otherIndex);
+
+        // 强制刷新 UI 排列
+        LayoutRebuilder.ForceRebuildLayoutImmediate((RectTransform)parent);
+
+        Debug.Log($"[Haunt] {potionID} 与 {other.name} 互换位置");
     }
 
     public void ExitHaunt()
     {
-        Debug.Log($"药剂 {potionID} 恢复正常状态");
-        // 可加还原位置逻辑
+        throw new System.NotImplementedException();
     }
 }
+

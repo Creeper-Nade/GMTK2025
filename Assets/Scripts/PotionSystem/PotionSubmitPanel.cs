@@ -1,17 +1,29 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PotionSubmitPanel : MonoBehaviour
 {
-    public Transform slotContainer;
-    public GameObject potionPrefab;
-
+    public Transform slotContainer;         // UI容器
+    public GameObject potionPrefab;         // 药剂预制体
     private List<GameObject> submittedPotions = new List<GameObject>();
+
     public static PotionSubmitPanel Instance;
 
     private void Awake()
     {
         Instance = this;
+    }
+    private void Start()
+    {
+        foreach (Transform child in slotContainer)
+        {
+            if (child.TryGetComponent<PotionItem>(out var potionItem))
+            {
+                submittedPotions.Add(child.gameObject);
+                Debug.Log($"已注册药剂: {potionItem.potionID}");
+            }
+        }
     }
 
     public void SubmitPotion(InventoryItem item)
@@ -22,7 +34,6 @@ public class PotionSubmitPanel : MonoBehaviour
         submittedPotions.Add(newPotion);
     }
 
-    // ✅ 这是新加的方法：支持从多个材料合成出一个 PotionItem，带最大冷却和闹鬼属性
     public void SubmitPotions(List<InventoryItem> items)
     {
         if (items == null || items.Count == 0)
@@ -31,7 +42,6 @@ public class PotionSubmitPanel : MonoBehaviour
             return;
         }
 
-        // 名字拼接
         string potionID = "合成物(";
         for (int i = 0; i < items.Count; i++)
         {
@@ -40,29 +50,17 @@ public class PotionSubmitPanel : MonoBehaviour
         }
         potionID += ")";
 
-        // 取第一个图标（也可自定义图标）
         Sprite icon = items[0].icon;
-
-        // 平均颜色
         Color avgColor = CombineColors(items);
 
-        // 最大冷却时间
         float maxCD = 0f;
-        foreach (var item in items)
-            maxCD = Mathf.Max(maxCD, item.cooldownTime);
-
-        // 是否闹鬼
         bool haunted = false;
         foreach (var item in items)
         {
-            if (item.isHaunted)
-            {
-                haunted = true;
-                break;
-            }
+            if (item.isHaunted) haunted = true;
+            maxCD = Mathf.Max(maxCD, item.cooldownTime);
         }
 
-        // 创建 PotionItem
         GameObject newPotion = Instantiate(potionPrefab, slotContainer);
         PotionItem potionItem = newPotion.GetComponent<PotionItem>();
         potionItem.SetPotion(icon, potionID, avgColor, maxCD, haunted);
@@ -71,6 +69,8 @@ public class PotionSubmitPanel : MonoBehaviour
 
     public void TriggerHauntOnAll()
     {
+        Debug.Log($"触发闹鬼，当前药剂数量：{submittedPotions.Count}");
+
         foreach (GameObject potion in submittedPotions)
         {
             if (potion.TryGetComponent<IHauntAction>(out var haunter))
@@ -94,3 +94,4 @@ public class PotionSubmitPanel : MonoBehaviour
         return new Color(r / count, g / count, b / count, a / count);
     }
 }
+

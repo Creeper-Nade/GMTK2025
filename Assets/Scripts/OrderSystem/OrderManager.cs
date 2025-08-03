@@ -1,46 +1,47 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class OrderManager : MonoBehaviour
 {
-    [SerializeField] private Sprite[] orderSprites;  // 在 Inspector 中拖入多个订单图
-    [SerializeField] private Image orderDisplayImage; // Inspector 中拖入 UI Image 组件用于显示订单贴图
-
-    private int currentOrderIndex = -1;
-
-    void Start()
+    [System.Serializable]
+    public class OrderEntry
     {
-        RefreshOrder();
+        public Sprite orderSprite;
+        public string orderID;  // 格式：合成物(Duskmoth+Mandrake Root+...)
     }
-    public void SetOrderVisible(bool visible)
+
+    public List<OrderEntry> orders;              // 所有可选订单
+    public Image orderDisplayImage;              // 显示订单贴图的 UI Image
+    public string CurrentOrderID { get; private set; }
+
+    public static OrderManager Instance { get; private set; }
+
+    private void Awake()
     {
-        Debug.Log("订单 UI 显示状态：" + visible);
-        if (orderDisplayImage != null)
-            orderDisplayImage.gameObject.SetActive(visible);
+        Instance = this;
+        GenerateNewOrder();
     }
-    public void RefreshOrder()
+
+    public void GenerateNewOrder()
     {
-        if (orderSprites.Length == 0 || orderDisplayImage == null)
+        if (orders == null || orders.Count == 0)
         {
-            Debug.LogWarning("订单贴图数组为空或未设置展示 Image");
+            Debug.LogWarning("订单列表为空！");
             return;
         }
 
-        int newIndex;
-        do
-        {
-            newIndex = Random.Range(0, orderSprites.Length);
-        } while (newIndex == currentOrderIndex && orderSprites.Length > 1); // 保证不会和上次一样
+        int index = Random.Range(0, orders.Count);
+        OrderEntry selected = orders[index];
 
-        currentOrderIndex = newIndex;
-        orderDisplayImage.sprite = orderSprites[currentOrderIndex];
+        CurrentOrderID = selected.orderID;
+        orderDisplayImage.sprite = selected.orderSprite;
+
+        Debug.Log("新订单生成：" + CurrentOrderID);
     }
 
-    public void SubmitPotion()
+    public bool CheckOrderMatch(string potionID)
     {
-        // 你可以在这里添加提交逻辑，比如判断药剂是否匹配订单等
-
-        Debug.Log("药剂提交成功，刷新订单！");
-        RefreshOrder();
+        return potionID == CurrentOrderID;
     }
 }

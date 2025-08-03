@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1046380236201083137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4012755823092512151}
+  - component: {fileID: 4072692416897915764}
+  m_Layer: 0
+  m_Name: OrderManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4012755823092512151
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046380236201083137}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4072692416897915764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046380236201083137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7236adc159af3dd4ea3731f4a24594b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orders:
+  - orderSprite: {fileID: 3313895305357177206, guid: 5cb5b924ab9795144a10627df7e765d6, type: 3}
+    orderID: "\u5408\u6210\u7269(Datura Blossom\xD71 + Duskmoth\xD71 + Mandrake Root\xD71
+      + Ram Horn\xD71)"
+  - orderSprite: {fileID: 2248334312949190540, guid: 6032c194ba4595245bf558fb7d0a0e61, type: 3}
+    orderID: "\u5408\u6210\u7269(Arcane Ore\xD71 + Datura Blossom\xD71 + Duskmoth\xD71
+      + Fernleaf\xD71)"
+  - orderSprite: {fileID: -1129971265704641277, guid: 297b2bdb859be2c4e9629760234045d8, type: 3}
+    orderID: "\u5408\u6210\u7269(Datura Blossom\xD72 + Drake Scale\xD71 + Ram Horn\xD71)"
+  - orderSprite: {fileID: 2913299175819127945, guid: e6b36b9b3ce2c6044a9dae16b1c4a727, type: 3}
+    orderID: "\u5408\u6210\u7269(Arcane Ore\xD71 + Drake Scale\xD71 + Fernleaf\xD71)"
+  - orderSprite: {fileID: -4365901595150556539, guid: 09c034999ef8cde45b42e12215e35052, type: 3}
+    orderID: "\u5408\u6210\u7269(Drake Scale\xD71 + Duskmoth\xD71 + Mandrake Root\xD72)"
+  orderDisplayImage: {fileID: 0}

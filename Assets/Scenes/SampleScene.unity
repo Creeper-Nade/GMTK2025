@@ -1446,7 +1446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  maxDistance: 2
+  maxDistance: 0.2
   decelerationStart: 0.8
   snapBackSpeed: 6
   snapBackThreshold: 0.05
@@ -1891,12 +1891,12 @@ MonoBehaviour:
   - {fileID: 661368326}
   - {fileID: 923854908}
   - {fileID: 770274154}
-  GhostNumber: 1
+  GhostNumber: 2
   CurseGhostNumber: 1
-  _HauntCooldown: 8
-  _CurseCooldown: 5
-  _HauntProbability: 0.33
-  _CurseProbability: 0.5
+  _HauntCooldown: 12
+  _CurseCooldown: 15
+  _HauntProbability: 0.5
+  _CurseProbability: 0.33
   _Failure: 0
 --- !u!4 &491962515
 Transform:
@@ -3022,7 +3022,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 424469475}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!331 &849377551
 SpriteMask:
@@ -4394,7 +4394,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 424469475}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1459465829
 Animator:
@@ -6853,3 +6853,5 @@ SceneRoots:
   - {fileID: 360421676}
   - {fileID: 72011118}
   - {fileID: 134406762}
+  - {fileID: 849377550}
+  - {fileID: 1459465828}

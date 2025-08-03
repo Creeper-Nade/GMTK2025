@@ -12,6 +12,7 @@ public class RoomChanger : Singleton<RoomChanger>
     [SerializeField] private GameObject Inventory;
     [SerializeField] private GameObject potionSubmitPanel;
     //[SerializeField] private GameObject orderPanel;
+    [SerializeField] private GameObject orderImage;
 
     //Screen slide variables
     [SerializeField] private Animator _ScreenSlideTransitAnimator;
@@ -98,7 +99,6 @@ public class RoomChanger : Singleton<RoomChanger>
             playerControl.speed = 10;
         }
         _currentRoom.gameObject.SetActive(true);
-
 
     }
 

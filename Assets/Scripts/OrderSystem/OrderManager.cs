@@ -8,11 +8,11 @@ public class OrderManager : MonoBehaviour
     public class OrderEntry
     {
         public Sprite orderSprite;
-        public string orderID;  // 格式：合成物(Duskmoth+Mandrake Root+...)
+        public string orderID; 
     }
 
-    public List<OrderEntry> orders;              // 所有可选订单
-    public Image orderDisplayImage;              // 显示订单贴图的 UI Image
+    public List<OrderEntry> orders;          
+    public Image orderDisplayImage;             
     public string CurrentOrderID { get; private set; }
 
     public static OrderManager Instance { get; private set; }

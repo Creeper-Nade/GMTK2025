@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 82669c1d1d87edc4ebc2158fe1160bd7
+guid: 690bc6c74aa3da24d9d6a4205af8bf67
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6415490079858998490
-    second: backpack_0
+      213: 5479996838431968346
+    second: bp_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: backpack_0
+      name: bp_0
       rect:
         serializedVersion: 2
         x: 26
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 62346f953c997f6a0800000000000000
-      internalID: -6415490079858998490
+      spriteID: a5c400d171cdc0c40800000000000000
+      internalID: 5479996838431968346
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      backpack_0: -6415490079858998490
+      bp_0: 5479996838431968346
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

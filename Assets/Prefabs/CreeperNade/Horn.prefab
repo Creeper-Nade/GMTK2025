@@ -77,8 +77,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -761407709
   m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 702eb3d0661bb8f499aca60c51e8ebc1, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 2253302419497955991, guid: 6f0f547a53ba89b428581fb28277aa84, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -127,13 +127,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 3.823077, y: 8.2153845}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 4.79, y: 8.45}
   m_EdgeRadius: 0
 --- !u!114 &7663437980823511643
 MonoBehaviour:
@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurseParticlePrefab: {fileID: 8961236503330503431, guid: 5955cc9e098cab245bfcf37d70fdc3f0, type: 3}
+  _CurseDuration: 9
   is_cursed: 0
   curseState: 0
   NormalName: Ram Horn

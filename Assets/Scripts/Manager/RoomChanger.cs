@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class RoomChanger : Singleton<RoomChanger>
 {
-
+    [SerializeField] private PlayerControl playerControl;
     [SerializeField] private RoomBase _DefaultRoom;
     [SerializeField] private List<RoomBase> _RoomList;
     [SerializeField] private List<GameObject> _ButtonList;
     [SerializeField] private GameObject Inventory;
     [SerializeField] private GameObject potionSubmitPanel;
-    [SerializeField] private GameObject orderPanel;
+    //[SerializeField] private GameObject orderPanel;
 
     //Screen slide variables
     [SerializeField] private Animator _ScreenSlideTransitAnimator;
@@ -78,15 +78,24 @@ public class RoomChanger : Singleton<RoomChanger>
         _currentRoom.gameObject.SetActive(false);
         Inventory.SetActive(false);
         potionSubmitPanel.SetActive(false);
+
+        playerControl.maxDistance = 0.2f;
+        playerControl.speed = 5;
         foreach (GameObject obj in _ButtonList)
             obj.SetActive(false);
             
         _currentRoom = targetRoom;
         //open submit panel if room is submission room; placeholder
-        if (_currentRoom.FrontRoom == null && _currentRoom.LeftRoom == null && _currentRoom.RightRoom == null)
+        if (_currentRoom.BackRoom!=null)
         {
             if (potionSubmitPanel != null)
                 potionSubmitPanel.SetActive(true);
+        }
+        //checks if current room is the warehouse.
+        if (_currentRoom.FrontRoom == null && _currentRoom.LeftRoom == null && _currentRoom.BackRoom == null)
+        {
+            playerControl.maxDistance = 5;
+            playerControl.speed = 10;
         }
         _currentRoom.gameObject.SetActive(true);
 

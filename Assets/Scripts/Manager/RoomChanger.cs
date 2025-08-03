@@ -21,7 +21,7 @@ public class RoomChanger : Singleton<RoomChanger>
     private int _SlideDownHash = Animator.StringToHash("SlideDown");
     private int _SlideUpHash = Animator.StringToHash("SlideUp");
 
-    [SerializeField] private List<GameObject> DefaultRoomObjects;
+
 
 
     private RoomBase _currentRoom;
@@ -78,36 +78,18 @@ public class RoomChanger : Singleton<RoomChanger>
 
         _currentRoom.gameObject.SetActive(false);
         Inventory.SetActive(false);
+        potionSubmitPanel.SetActive(false);
         foreach (GameObject obj in _ButtonList)
             obj.SetActive(false);
-
-        // 隐藏 FrontRoom 专属物体
-        foreach (GameObject obj in DefaultRoomObjects)
-            obj.SetActive(false);
-
+            
         _currentRoom = targetRoom;
-        _currentRoom.gameObject.SetActive(true);
-
-        // 如果是 FrontRoom，激活 FrontRoom 专属物体
-        if (_currentRoom == _DefaultRoom)  
-        {
-            foreach (GameObject obj in DefaultRoomObjects)
-                obj.SetActive(true);
-        }
-
-        // 如果是 SubmissionRoom，激活 SubmissionRoom 专属物体
-        if (_currentRoom.name == "SubmissionRoom")
+        //open submit panel if room is submission room; placeholder
+        if (_currentRoom.FrontRoom == null && _currentRoom.LeftRoom == null && _currentRoom.RightRoom == null)
         {
             if (potionSubmitPanel != null)
                 potionSubmitPanel.SetActive(true);
         }
-        else
-        {
-            if (potionSubmitPanel != null)
-                potionSubmitPanel.SetActive(false);
-        }
-
-        _currentRoom.init();
+        _currentRoom.gameObject.SetActive(true);
 
 
     }

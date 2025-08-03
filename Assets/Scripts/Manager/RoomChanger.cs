@@ -27,7 +27,12 @@ public class RoomChanger : Singleton<RoomChanger>
     private RoomBase _currentRoom;
     private void Start()
     {
-        //reset and init rooms
+        StartCoroutine(InitCouroutine());
+    }
+    private IEnumerator InitCouroutine()
+    {
+        yield return null;
+         //reset and init rooms
         _currentRoom = _DefaultRoom;
         foreach (RoomBase room in _RoomList)
         {

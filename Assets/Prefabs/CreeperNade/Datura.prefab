@@ -78,12 +78,12 @@ SpriteRenderer:
   m_SortingLayerID: -761407709
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6710241550191920354, guid: 1e882c63b0f3cc54dad63f108473c619, type: 3}
+  m_Sprite: {fileID: -8834681573721437321, guid: a771b45f40ed84c45ba0054c917bfa15, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.5184616, y: 2.126154}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -105,16 +105,17 @@ MonoBehaviour:
   _CurseDuration: 9
   is_cursed: 0
   curseState: 0
-  _Growth_Time: 9
+  _Growth_Time: 6
   spriteRenderer: {fileID: 0}
   _no_sprite: {fileID: 0}
-  _sprout_sprite: {fileID: -6710241550191920354, guid: 1e882c63b0f3cc54dad63f108473c619, type: 3}
-  _seedling_sprite: {fileID: -3650305035519995937, guid: d0318d102de3c924d93f85d930476a55, type: 3}
-  _plant_sprite: {fileID: -8449344208402845997, guid: 90ddca976031b9e47964d18249711e68, type: 3}
+  _sprout_sprite: {fileID: -1581888854661022347, guid: b91451694bd72b84d810e744b7f3ca9f, type: 3}
+  _seedling_sprite: {fileID: -488001154511093034, guid: 92f15591a96b2a741a260e5ae5837503, type: 3}
+  _plant_sprite: {fileID: -8834681573721437321, guid: a771b45f40ed84c45ba0054c917bfa15, type: 3}
+  _Item_Sprite: {fileID: 6957166249862745982, guid: 67e29a4538507f74ea0d6387645f6f68, type: 3}
   Current_Time: 0
   plantName: Datura Blossom
   cooldownTime: 3
-  herbColor: {r: 0.5990566, g: 0.9926743, b: 1, a: 0}
+  herbColor: {r: 0.7019608, g: 0.40784314, b: 0.83137256, a: 0}
   stage: 0
   _GhostPlants:
   - {fileID: 5522112180882192067, guid: c69662c1112c55f4e857e9d47fc76c46, type: 3}
@@ -153,15 +154,15 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 1.02}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.67846155, y: 0.68}
-    newSize: {x: 1, y: 1}
+    pivot: {x: 0.6954351, y: 0.016262822}
+    oldSize: {x: 1.5184616, y: 2.126154}
+    newSize: {x: 1.5184616, y: 2.126154}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.16, y: 2.2}
   m_EdgeRadius: 0

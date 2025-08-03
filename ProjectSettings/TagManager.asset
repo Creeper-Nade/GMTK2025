@@ -47,5 +47,8 @@ TagManager:
   - name: Interactables
     uniqueID: 3533559587
     locked: 0
+  - name: Foreground
+    uniqueID: 3050600669
+    locked: 0
   m_RenderingLayers:
   - Default

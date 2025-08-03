@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5522112180882192067
+--- !u!1 &8489499944904593934
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,24 +8,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5274301250431222938}
-  - component: {fileID: 3024507757727776533}
-  - component: {fileID: 3316125568421691692}
-  - component: {fileID: 7560078046570786482}
+  - component: {fileID: 5531074142095056152}
+  - component: {fileID: 7698415512810063784}
+  - component: {fileID: 2913719653426974942}
+  - component: {fileID: 988708095706338590}
   m_Layer: 0
-  m_Name: Fern
+  m_Name: Mandrake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5274301250431222938
+--- !u!4 &5531074142095056152
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5522112180882192067}
+  m_GameObject: {fileID: 8489499944904593934}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.46, y: -3.2049901, z: 0}
@@ -34,13 +34,13 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3024507757727776533
+--- !u!212 &7698415512810063784
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5522112180882192067}
+  m_GameObject: {fileID: 8489499944904593934}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -78,24 +78,24 @@ SpriteRenderer:
   m_SortingLayerID: -761407709
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2223b0a570b66ee42b3e0a79f0789b2a, type: 3}
+  m_Sprite: {fileID: -4493105828818198075, guid: 4ba621bb772fccf4dbda8bfeda13a578, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.3569231, y: 1.3123077}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3316125568421691692
+--- !u!114 &2913719653426974942
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5522112180882192067}
+  m_GameObject: {fileID: 8489499944904593934}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29b8048afe0e1a14799b8e5f2b89853b, type: 3}
@@ -105,27 +105,28 @@ MonoBehaviour:
   _CurseDuration: 9
   is_cursed: 0
   curseState: 0
-  _Growth_Time: 6
+  _Growth_Time: 9
   spriteRenderer: {fileID: 0}
   _no_sprite: {fileID: 0}
-  _sprout_sprite: {fileID: -6710241550191920354, guid: 1e882c63b0f3cc54dad63f108473c619, type: 3}
-  _seedling_sprite: {fileID: 4387867958176886817, guid: 8dc75c39376e67b4c8ce6eed3d7e2692, type: 3}
-  _plant_sprite: {fileID: -7788876525783057647, guid: 2ea51d18884e05843b894632432aef4f, type: 3}
+  _sprout_sprite: {fileID: -1581888854661022347, guid: b91451694bd72b84d810e744b7f3ca9f, type: 3}
+  _seedling_sprite: {fileID: 7975554766480393932, guid: 6744a2c5657a9af4ea61a313bdc4a8cb, type: 3}
+  _plant_sprite: {fileID: -4493105828818198075, guid: 4ba621bb772fccf4dbda8bfeda13a578, type: 3}
+  _Item_Sprite: {fileID: 6796616472097357210, guid: eb28df027feb6e741b705b96546e27b1, type: 3}
   Current_Time: 0
-  plantName: Fernleaf
-  cooldownTime: 4.5
-  herbColor: {r: 0.1251138, g: 0.8113208, b: 0.03444285, a: 0}
+  plantName: Mandrake Root
+  cooldownTime: 3.6
+  herbColor: {r: 0.60784316, g: 0.52156866, b: 0.3372549, a: 0}
   stage: 0
   _GhostPlants:
-  - {fileID: 8489499944904593934, guid: 95517f2b2c90c044194c02fb7749515e, type: 3}
-  - {fileID: 1106476734330403034, guid: 9b8ba4e43d870e84eb8354367de94262, type: 3}
---- !u!61 &7560078046570786482
+  - {fileID: 5522112180882192067, guid: c69662c1112c55f4e857e9d47fc76c46, type: 3}
+  - {fileID: 0}
+--- !u!61 &988708095706338590
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5522112180882192067}
+  m_GameObject: {fileID: 8489499944904593934}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -153,15 +154,15 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.75}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
-    newSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.4907693, y: 1.4584615}
+    newSize: {x: 1.3569231, y: 1.3123077}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 1.6}
   m_EdgeRadius: 0

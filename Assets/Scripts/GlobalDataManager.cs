@@ -1,14 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GlobalDataManager : Singleton<GlobalDataManager>
 {
-    public RoomBase GreenHouse;
+    [Header("UI Animation")]
+    
     [SerializeField] private Animator _JumpscareAnimator;
     [SerializeField] private Animator _DeathScreenAnimator;
+    [Header("Plants")]
+    public RoomBase GreenHouse;
     public List<Plant> Plants;
+    [SerializeField] private Transform PlantMarkerParent;
+    [SerializeField] private List<GameObject> _AvailablePlantsThisRound = new();
+    [SerializeField] private int Max_Plant;
+
+    [Header("Haunt")]
     [SerializeField] private List<RoomBase> _RoomList;
     private List<AbstractInteractables> _Interactables = new();
     private List<IHauntAction> _Hauntables = new();
@@ -41,6 +50,12 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
         //set jumpscare ui to inactive at beginning
         _JumpscareAnimator.gameObject.SetActive(false);
         _DeathScreenAnimator.gameObject.SetActive(false);
+       
+        // Debug.Log("Interactables size: " + _Interactables.Count);
+        //Debug.Log("Hauntable size: " + _Hauntables.Count);
+    }
+    private void Start() {
+        PlantGenerator();
         //get all plants from greenhouse
         Plant[] plants = GreenHouse.GetComponentsInChildren<Plant>();
         for (int i = 0; i < plants.Length; i++)
@@ -74,8 +89,24 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
             }
 
         }
-        // Debug.Log("Interactables size: " + _Interactables.Count);
-        //Debug.Log("Hauntable size: " + _Hauntables.Count);
+    }
+    private void PlantGenerator()
+    {
+        List<GameObject> plant_composition = new(_AvailablePlantsThisRound);
+        for (int i = _AvailablePlantsThisRound.Count; i < Max_Plant; i++)
+        {
+            plant_composition.Add(_AvailablePlantsThisRound[Random.Range(0, _AvailablePlantsThisRound.Count)]);
+        }
+        Debug.Log(ObjectPoolManager.Instance);
+        for (int i = 0; i < Max_Plant; i++)
+        {
+            Debug.Log("count:" + plant_composition.Count);
+            GameObject targetPrefab = plant_composition[Random.Range(0, plant_composition.Count)];
+            plant_composition.Remove(targetPrefab);
+
+            GameObject obj = ObjectPoolManager.Instance.SpawnObject(targetPrefab, GreenHouse.transform, Quaternion.identity);
+            obj.transform.position = PlantMarkerParent.GetChild(i).position;
+        }
     }
 
     // Update is called once per frame

@@ -119,7 +119,7 @@ MonoBehaviour:
   stage: 0
   _GhostPlants:
   - {fileID: 5522112180882192067, guid: c69662c1112c55f4e857e9d47fc76c46, type: 3}
-  - {fileID: 0}
+  - {fileID: 1106476734330403034, guid: 9b8ba4e43d870e84eb8354367de94262, type: 3}
 --- !u!61 &988708095706338590
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
@@ -10,7 +10,7 @@ public class PotionItem : MonoBehaviour, IHauntAction, IPointerEnterHandler, IPo
     public float cooldownTime;
     public bool isHaunted;
 
-    // ĞÂÔöÒıÓÃ
+    // æ–°å¢å¼•ç”¨
     public GameObject submitButton;
     public GameObject destroyButton;
 
@@ -48,13 +48,13 @@ public class PotionItem : MonoBehaviour, IHauntAction, IPointerEnterHandler, IPo
         LayoutRebuilder.ForceRebuildLayoutImmediate((RectTransform)parent);
     }
 
-    // Êó±ê½øÈëÏÔÊ¾°´Å¥
+    // é¼ æ ‡è¿›å…¥æ˜¾ç¤ºæŒ‰é’®
     public void OnPointerEnter(PointerEventData eventData)
     {
         ShowButtons();
     }
 
-    // Êó±êÒÆ³öÒş²Ø°´Å¥
+    // é¼ æ ‡ç§»å‡ºéšè—æŒ‰é’®
     public void OnPointerExit(PointerEventData eventData)
     {
         HideButtons();
@@ -74,13 +74,29 @@ public class PotionItem : MonoBehaviour, IHauntAction, IPointerEnterHandler, IPo
 
     public void OnSubmitClicked()
     {
-        Debug.Log($"Ìá½»£º{potionID}");
-        // TODO: µ÷ÓÃÄãµÄÌá½»Âß¼­
+        Debug.Log($"æäº¤ï¼š{potionID}");
+        if (string.IsNullOrEmpty(potionID))
+        {
+            Debug.LogWarning("è¯å‰‚ ID ä¸ºç©ºï¼Œä¸èƒ½æäº¤ï¼");
+            return;
+        }
+
+        if (OrderManager.Instance.CheckOrderMatch(potionID))
+        {
+            Debug.Log("âœ… æäº¤æˆåŠŸï¼Œåˆ·æ–°è®¢å•ï¼");
+            OrderManager.Instance.GenerateNewOrder();
+            Destroy(gameObject); // æˆ–è€…ç§»é™¤è§†è§‰æ˜¾ç¤º
+        }
+        else
+        {
+            Debug.Log("âŒ æäº¤å¤±è´¥ï¼Œè¯å‰‚ä¸ç¬¦åˆè®¢å•ï¼");
+            Destroy(gameObject);
+        }
     }
 
     public void OnDestroyClicked()
     {
-        Debug.Log($"Ïú»Ù£º{potionID}");
+        Debug.Log($"é”€æ¯ï¼š{potionID}");
         Destroy(gameObject);
     }
 

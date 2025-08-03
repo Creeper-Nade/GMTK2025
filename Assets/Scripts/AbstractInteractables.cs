@@ -39,7 +39,8 @@ public abstract class AbstractInteractables : MonoBehaviour, IPointerEnterHandle
     protected virtual void OnDisable() {
         if (_CurrentCurseParticleSystem != null && !is_cursed)
         {
-            ObjectPoolManager.Instance.ReturnObjectToPool(_CurrentCurseParticleSystem, ObjectPoolManager.PoolType.ParticleSystems);
+            // ObjectPoolManager.Instance.ReturnObjectToPool(_CurrentCurseParticleSystem, ObjectPoolManager.PoolType.ParticleSystems);
+            GlobalDataManager.Instance.CallPoolCurseParticle(_CurrentCurseParticleSystem);
         }
     }
     private void FailCurse()

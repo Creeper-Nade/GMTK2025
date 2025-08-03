@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 5380575392b05dc4780d3e5d8508b658
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1920531436881784180
+    second: Anim_JS (17)_0
+  - first:
+      213: -864897786399238162
+    second: Anim_JS (17)_1
+  - first:
+      213: 1068348937651626526
+    second: Anim_JS (17)_2
+  - first:
+      213: -7666184943516195081
+    second: Anim_JS (17)_3
+  - first:
+      213: 501841185625345834
+    second: Anim_JS (17)_4
+  - first:
+      213: 1465282781527330190
+    second: Anim_JS (17)_5
+  - first:
+      213: 3375229560458003625
+    second: Anim_JS (17)_6
+  - first:
+      213: 4795844329476407237
+    second: Anim_JS (17)_7
+  - first:
+      213: -7275867891399158805
+    second: Anim_JS (17)_8
+  - first:
+      213: 4894041066098259288
+    second: Anim_JS (17)_9
+  - first:
+      213: -6847692839292826268
+    second: Anim_JS (17)_10
+  - first:
+      213: -1373563580463398744
+    second: Anim_JS (17)_11
+  - first:
+      213: -3037873619104980362
+    second: Anim_JS (17)_12
+  - first:
+      213: -487984963360589568
+    second: Anim_JS (17)_13
+  - first:
+      213: -8450202876670536361
+    second: Anim_JS (17)_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim_JS (17)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 464
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c82d0b465d6e855e0800000000000000
+      internalID: -1920531436881784180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_JS (17)_1
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 1066
+        width: 142
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee7d6a2bb044ff3f0800000000000000
+      internalID: -864897786399238162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_JS (17)_2
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1347
+        width: 13
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1224ecc2b983de00800000000000000
+      internalID: 1068348937651626526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_JS (17)_3
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 1346
+        width: 24
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f6e44b396d3c9590800000000000000
+      internalID: -7666184943516195081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_JS (17)_4
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 1326
+        width: 140
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2f0cd246e5e6f600800000000000000
+      internalID: 501841185625345834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_JS (17)_5
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 1432
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8dce682deab55410800000000000000
+      internalID: 1465282781527330190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_JS (17)_6
+      rect:
+        serializedVersion: 2
+        x: 1991
+        y: 1432
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a44f7a076937de20800000000000000
+      internalID: 3375229560458003625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_JS (17)_7
+      rect:
+        serializedVersion: 2
+        x: 2073
+        y: 1336
+        width: 22
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cf338812034e8240800000000000000
+      internalID: 4795844329476407237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_JS (17)_8
+      rect:
+        serializedVersion: 2
+        x: 2102
+        y: 0
+        width: 458
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be39b74b3bce60b90800000000000000
+      internalID: -7275867891399158805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_JS (17)_9
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 1304
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 855f5fc7b602be340800000000000000
+      internalID: 4894041066098259288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_JS (17)_10
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 760
+        width: 564
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46d07fea4ab18f0a0800000000000000
+      internalID: -6847692839292826268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_JS (17)_11
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 191
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a0c016733f10fce0800000000000000
+      internalID: -1373563580463398744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_JS (17)_12
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 172
+        width: 566
+        height: 666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 672a7bce90e47d5d0800000000000000
+      internalID: -3037873619104980362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_JS (17)_13
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 0
+        width: 513
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 009f823e2445a39f0800000000000000
+      internalID: -487984963360589568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_JS (17)_14
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 0
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75591183149daba80800000000000000
+      internalID: -8450202876670536361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Anim_JS (17)_0: -1920531436881784180
+      Anim_JS (17)_1: -864897786399238162
+      Anim_JS (17)_10: -6847692839292826268
+      Anim_JS (17)_11: -1373563580463398744
+      Anim_JS (17)_12: -3037873619104980362
+      Anim_JS (17)_13: -487984963360589568
+      Anim_JS (17)_14: -8450202876670536361
+      Anim_JS (17)_2: 1068348937651626526
+      Anim_JS (17)_3: -7666184943516195081
+      Anim_JS (17)_4: 501841185625345834
+      Anim_JS (17)_5: 1465282781527330190
+      Anim_JS (17)_6: 3375229560458003625
+      Anim_JS (17)_7: 4795844329476407237
+      Anim_JS (17)_8: -7275867891399158805
+      Anim_JS (17)_9: 4894041066098259288
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

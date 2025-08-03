@@ -6,6 +6,8 @@ using UnityEngine;
 public class GlobalDataManager : Singleton<GlobalDataManager>
 {
     public RoomBase GreenHouse;
+    [SerializeField] private Animator _JumpscareAnimator;
+    [SerializeField] private Animator _DeathScreenAnimator;
     public List<Plant> Plants;
     [SerializeField] private List<RoomBase> _RoomList;
     private List<AbstractInteractables> _Interactables = new();
@@ -34,7 +36,11 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
 
     protected override void Awake()
     {
+        Time.timeScale = 1.0f;
         base.Awake();
+        //set jumpscare ui to inactive at beginning
+        _JumpscareAnimator.gameObject.SetActive(false);
+        _DeathScreenAnimator.gameObject.SetActive(false);
         //get all plants from greenhouse
         Plant[] plants = GreenHouse.GetComponentsInChildren<Plant>();
         for (int i = 0; i < plants.Length; i++)
@@ -86,24 +92,24 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
         {
             if (_CursedObjects[i] != null && _CursedObjects[i].is_cursed)
             {
-                if(!_VignetteFadeInCalled)
-                StartCoroutine(VignetteFadeIn(_CursedObjects[i]._CurseDuration));
+                if (!_VignetteFadeInCalled)
+                    StartCoroutine(VignetteFadeIn(_CursedObjects[i]._CurseDuration));
                 _CursedObjects[i].CurseElapse();
             }
         }
         if (_CursedObjects != null && PostProcessingControl.Instance.vignette.intensity.value > 0)
         {
-        // Filter out nulls and check for any cursed objects
-        bool anyCursed = _CursedObjects
-            .Where(obj => obj != null)  // Filter out null objects
-            .Any(obj => obj.is_cursed); // Check if any remaining object is cursed
+            // Filter out nulls and check for any cursed objects
+            bool anyCursed = _CursedObjects
+                .Where(obj => obj != null)  // Filter out null objects
+                .Any(obj => obj.is_cursed); // Check if any remaining object is cursed
 
-        if (!anyCursed && !_VignetteFadeOutCalled)
-        {
-            StartCoroutine(VignetteFadeOut());
+            if (!anyCursed && !_VignetteFadeOutCalled)
+            {
+                StartCoroutine(VignetteFadeOut());
+            }
         }
-        }
-        
+
         if (!_CurseCalled)
             StartCoroutine(CallCurse());
         if (!_HauntCalled)
@@ -130,10 +136,10 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
         while (elapsed < duration)
         {
             elapsed += Time.deltaTime;
-             PostProcessingControl.Instance.vignette.intensity.value = Mathf.Lerp(0, 0.5f, elapsed / duration);
-             bool anyCursed = _CursedObjects
-            .Where(obj => obj != null)  // Filter out null objects
-            .Any(obj => obj.is_cursed); // Check if any remaining object is cursed
+            PostProcessingControl.Instance.vignette.intensity.value = Mathf.Lerp(0, 0.5f, elapsed / duration);
+            bool anyCursed = _CursedObjects
+           .Where(obj => obj != null)  // Filter out null objects
+           .Any(obj => obj.is_cursed); // Check if any remaining object is cursed
 
             if (!anyCursed)
             {
@@ -147,10 +153,11 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
         _VignetteFadeOutCalled = true;
         float duration = 0.5f;
         float elapsed = 0f;
+        float FadeProgress = PostProcessingControl.Instance.vignette.intensity.value;
         while (elapsed < duration)
         {
             elapsed += Time.deltaTime;
-            PostProcessingControl.Instance.vignette.intensity.value = Mathf.Lerp(0.5f, 0f, elapsed / duration);
+            PostProcessingControl.Instance.vignette.intensity.value = Mathf.Lerp(FadeProgress, 0f, elapsed / duration);
             yield return null;
         }
         _VignetteFadeOutCalled = false;
@@ -253,17 +260,38 @@ public class GlobalDataManager : Singleton<GlobalDataManager>
         yield return new WaitForSeconds(_HauntCooldown);
         _HauntCalled = false;
     }
+    public void CallPoolCurseParticle(GameObject obj)
+    {
+        StartCoroutine(PoolCurseParticle(obj));
+    }
+    private IEnumerator PoolCurseParticle(GameObject obj)
+    {
+        yield return null;
+        ObjectPoolManager.Instance.ReturnObjectToPool(obj, ObjectPoolManager.PoolType.ParticleSystems);
+
+    }
     public void FailAction()
     {
         _Failure++;
-        _Failure=Mathf.Clamp(_Failure, 0, 3);
+        _Failure = Mathf.Clamp(_Failure, 0, 3);
         if (_Failure < 3)
         {
             PostProcessingControl.Instance.TriggerFailureEffect();
         }
+        else
+        {
+            LoseEffect();
+        }
     }
     private void LoseEffect()
     {
-
+        _JumpscareAnimator.gameObject.SetActive(true);
+        StartCoroutine(ShowDeathScreen());
+    }
+    private IEnumerator ShowDeathScreen()
+    {
+        Time.timeScale = 0f;
+        yield return new WaitForSecondsRealtime(2);
+        _DeathScreenAnimator.gameObject.SetActive(true);
     }
 }

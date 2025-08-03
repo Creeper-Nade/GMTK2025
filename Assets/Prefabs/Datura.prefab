@@ -102,6 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurseParticlePrefab: {fileID: 8961236503330503431, guid: 5955cc9e098cab245bfcf37d70fdc3f0, type: 3}
+  _CurseDuration: 9
   is_cursed: 0
   curseState: 0
   _Growth_Time: 9
